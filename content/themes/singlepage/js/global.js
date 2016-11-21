@@ -1,5 +1,5 @@
 require.config({
-  "baseUrl": "/content/themes/imareal/js",
+  "baseUrl": "/content/themes/singlepage/js",
   "paths": {
     "jquery": "vendor/jquery/dist/jquery",
     "angular": "vendor/angular/angular",
