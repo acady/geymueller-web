@@ -1,0 +1,39 @@
+
+.mobile-checkout-review-product-row {
+  @extend .visible-xs;
+  
+  .left-column {
+    @include make-xs-column(7);
+    
+    padding-right: 5px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .right-column {
+    @include make-xs-column(5);
+    @include quantity();
+    
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  
+}
+
+.woocommerce-checkout-review-order-table {
+  
+  @media (max-width: $screen-sm-min) {
+    thead, tbody {
+      display: none;
+    }
+  }
+  
+}
+
+.product-quantity {
+  @include quantity();
+}
+
+.product-total, .cart-totals-value {
+  @include price();
+}

@@ -1,0 +1,22 @@
+{
+	"wpVer": "4.4.2",
+	"url": "http://realonline.imareal.sbg.ac.at.local",
+	"tablePrefix": "wp_",
+	"dbHost": "localhost",
+	"dbName": "realonline",
+	"dbUser": "realonline",
+	"dbPass": "realonline",
+	"git": true,
+	"submodule": true,
+	"wpDir": "cms",
+	"contentDir": "content",
+	"installTheme": true,
+	"themeDir": "imareal",
+	"themeType": "git",
+	"themeTaskRunner": "grunt",
+	"themeUser": "wesleytodd",
+	"themeRepo": "YeoPress",
+	"themeBranch": "template",
+	"customDirs": true,
+	"saltKeys": "define('AUTH_KEY',         'kzV4M|$iXDbfCpqU[EwQ%L)`C@^Ltp+VB(Ql@0<}7swFdqp6eDbPn%F^.u@6{s[e');\ndefine('SECURE_AUTH_KEY',  'ct7#@(f/%j4M+ZuXO~-K+D7v/KnH`@k@!Y?d|: V62hT$fBNH%tZFtok$w<-6aAE');\ndefine('LOGGED_IN_KEY',    'it69%YzH8:5+b_.;B(7?]}%r#:_hUI#$w3!~}4V$EGQV.0mQ~A0A*cTFZVG+zlnL');\ndefine('NONCE_KEY',        'A0]hT#S>d;`3G={X`y-Q@BwZgLncpMF7l67~9q_<`i6U|v9 r-0-lq an/fj0-n,');\ndefine('AUTH_SALT',        'bYjkK2YJ:)1Z<E8:L0V3dLABwo3kH/yl:**0YOac=O;Pc,63`+0;6>px)Fh3KW#:');\ndefine('SECURE_AUTH_SALT', '40e0!c9C;4Qf7`|^WsbN,m<{K[bmW?yB`!^FW%Byo]cBloY8hE>nwN|Jm6C=__&5');\ndefine('LOGGED_IN_SALT',   'a++C>3tBs.hy&@#)`HW]Cb%nXAbh[vzC^0b<SCDoUUZwQCu+pS681_7`Jn`%J.uz');\ndefine('NONCE_SALT',       'oaLz!|h]_%Lp@j&VM#P4F9,*Ucn2,TVFEo#y1e}c^wzAFz+$aPdp9`8;c*:98rWa');\n"
+}

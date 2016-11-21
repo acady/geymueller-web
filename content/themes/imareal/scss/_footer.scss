@@ -1,0 +1,35 @@
+
+#page-footer {
+  background-color: #FEFEFE;
+  border-top: 1px solid #ccc;
+  color: #000;
+  list-style-type: none;
+  
+  a:hover {
+    color: #AAA;
+  }
+  
+}
+
+
+.bottomMenu { display: block; bottom: 0; }
+.bottomMenu ul { display:inline; float:left;}
+.bottomMenu li { list-style-type: none; display: inline; font-size: 12px; }
+.bottomMenu li a {
+  color: #000;
+  line-height:15px;
+  text-decoration:none;
+  font-weight:normal;
+  border-right: thin solid #FFFFFF;
+  padding: 0 7px 0 3px;
+}
+
+.bottomMenu li a:hover { color:$brand-primary; text-decoration:none;}
+.bottomMenu li:last-child > a {border-right: none;} /* remove pipe from last item */
+
+.footer-container > div > * {
+  position: absolute;
+  bottom: 0;
+}
+
+
