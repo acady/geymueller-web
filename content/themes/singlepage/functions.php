@@ -1,5 +1,27 @@
 <?php
 
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+function theme_enqueue_scripts(){
+
+    wp_register_script('require', get_bloginfo('template_url') . '/js/vendor/requirejs/require.js', array(), false, true);
+    wp_enqueue_script('require');
+
+    /* LOCAL */
+    /*
+    wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
+    wp_enqueue_script('global');
+    wp_register_script('livereload', 'http://realonline.imareal.sbg.ac.at.local:35729/livereload.js?snipver=1', null, false, true);
+    wp_enqueue_script('livereload');
+    */
+
+    /* PRODUCTION */
+    wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
+//    wp_register_script('global', get_bloginfo('template_url') . '/js/optimized.min.js', array('require'), false, true);
+    wp_enqueue_script('global');
+
+
+    wp_enqueue_style('global', get_bloginfo('template_url') . '/css/global.css');
+}
 
 define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/admin/' );
 require_once dirname( __FILE__ ) . '/admin/options-framework.php';
