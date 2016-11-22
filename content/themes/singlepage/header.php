@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<base href="/">
 <?php wp_head(); ?>
 </head>
 <body  id="page-template" <?php body_class(); ?>>

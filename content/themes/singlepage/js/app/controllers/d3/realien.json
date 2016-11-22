@@ -1,0 +1,801 @@
+{
+    "entities": [
+        {
+            "id": "E1",
+            "type": "Szene"
+        }, {
+            "id": "E2",
+            "type": "Handlung",
+            "name": [
+                {
+                    "value": "kreuzigen",
+                    "thesaurus_id": "handlung:kreuzigen"
+                }
+            ]
+        }, {
+            "id": "E3",
+            "type": "Person",
+            "sex": [
+                {
+                    "value": "w"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Hl.",
+                    "thesaurus_id": "stand:hl_"
+                }
+            ],
+            "gestus": [
+                {
+                    "value": "Trauergestus",
+                    "thesaurus_id": "gestus:trauergestus"
+                }
+            ]
+        }, {
+            "id": "E4",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Heuke",
+                    "thesaurus_id": "gegenstand:heuke"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "blau",
+                    "thesaurus_id": "farbe:blau"
+                }
+            ]
+        }, {
+            "id": "E5",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Kleiderfutter",
+                    "thesaurus_id": "gegenstand:kleiderfutter"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "rot",
+                    "thesaurus_id": "farbe:rot"
+                }
+            ]
+        }, {
+            "id": "E6",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Schleier",
+                    "thesaurus_id": "gegenstand:schleier"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "weiß",
+                    "thesaurus_id": "farbe:weiß"
+                }
+            ]
+        }, {
+            "id": "E7",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Rock",
+                    "thesaurus_id": "gegenstand:rock"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "blau",
+                    "thesaurus_id": "farbe:blau"
+                }
+            ]
+        }, {
+            "id": "E8",
+            "type": "Person",
+            "sex": [
+                {
+                    "value": "w"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Hl.",
+                    "thesaurus_id": "stand:hl_"
+                }
+            ]
+        }, {
+            "id": "E9",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Heuke",
+                    "thesaurus_id": "gegenstand:heuke"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "grün",
+                    "thesaurus_id": "farbe:grün"
+                }
+            ]
+        }, {
+            "id": "E10",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Rock",
+                    "thesaurus_id": "gegenstand:rock"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "rot",
+                    "thesaurus_id": "farbe:rot"
+                }
+            ]
+        }, {
+            "id": "E11",
+            "type": "Person",
+            "sname": [
+                {
+                    "value": "Hl. Maria",
+                    "thesaurus_id": "sname:hl__maria"
+                }
+            ],
+            "sex": [
+                {
+                    "value": "w"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Hl.",
+                    "thesaurus_id": "stand:hl_"
+                }
+            ],
+            "gestus": [
+                {
+                    "value": "Trauergestus",
+                    "thesaurus_id": "gestus:trauergestus"
+                }
+            ]
+        }, {
+            "id": "E12",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Heuke",
+                    "thesaurus_id": "gegenstand:heuke"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "rot",
+                    "thesaurus_id": "farbe:rot"
+                }
+            ]
+        }, {
+            "id": "E13",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Rock",
+                    "thesaurus_id": "gegenstand:rock"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "blau",
+                    "thesaurus_id": "farbe:blau"
+                }
+            ]
+        }, {
+            "id": "E14",
+            "type": "Person",
+            "sex": [
+                {
+                    "value": "w"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Hl.",
+                    "thesaurus_id": "stand:hl_"
+                }
+            ]
+        }, {
+            "id": "E15",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Heuke",
+                    "thesaurus_id": "gegenstand:heuke"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "blau",
+                    "thesaurus_id": "farbe:blau"
+                }
+            ]
+        }, {
+            "id": "E16",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Kleiderfutter",
+                    "thesaurus_id": "gegenstand:kleiderfutter"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "rot",
+                    "thesaurus_id": "farbe:rot"
+                }
+            ]
+        }, {
+            "id": "E17",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Rock",
+                    "thesaurus_id": "gegenstand:rock"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "grün",
+                    "thesaurus_id": "farbe:grün"
+                }
+            ]
+        }, {
+            "id": "E18",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Rise",
+                    "thesaurus_id": "gegenstand:rise"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "weiß",
+                    "thesaurus_id": "farbe:weiß"
+                }
+            ]
+        }, {
+            "id": "E19",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Schleier",
+                    "thesaurus_id": "gegenstand:schleier"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "weiß",
+                    "thesaurus_id": "farbe:weiß"
+                }
+            ]
+        }, {
+            "id": "E20",
+            "type": "Person",
+            "sname": [
+                {
+                    "value": "Stephan von Sierndorf",
+                    "thesaurus_id": "sname:stephan_von_sierndorf"
+                }
+            ],
+            "sex": [
+                {
+                    "value": "m"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Chorherr",
+                    "thesaurus_id": "stand:chorherr"
+                }, {
+                    "value": "Propst",
+                    "thesaurus_id": "stand:propst"
+                }, {
+                    "value": "Stifter",
+                    "thesaurus_id": "stand:stifter"
+                }
+            ],
+            "gestus": [
+                {
+                    "value": "kniend",
+                    "thesaurus_id": "gestus:kniend"
+                }
+            ]
+        }, {
+            "id": "E21",
+            "type": "Koerperteil",
+            "name": [
+                {
+                    "value": "Tonsur"
+                }
+            ]
+        }, {
+            "id": "E22",
+            "type": "Koerperteil",
+            "name": [
+                {
+                    "value": "Bart"
+                }
+            ]
+        }, {
+            "id": "E23",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Spruchband",
+                    "thesaurus_id": "attribut:spruchband"
+                }
+            ]
+        }, {
+            "id": "E24",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Inschrift",
+                    "thesaurus_id": "gegenstand:inschrift"
+                }
+            ]
+        }, {
+            "id": "E25",
+            "type": "Originalzitat",
+            "text": [
+                {
+                    "value": "+ +MISERERE MEI DEUS"
+                }
+            ]
+        }, {
+            "id": "E26",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Spruchband",
+                    "thesaurus_id": "attribut:spruchband"
+                }
+            ]
+        }, {
+            "id": "E27",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Inschrift",
+                    "thesaurus_id": "gegenstand:inschrift"
+                }
+            ]
+        }, {
+            "id": "E28",
+            "type": "Originalzitat",
+            "text": [
+                {
+                    "value": "+STEPHANUS PRAEPOSITUS"
+                }
+            ]
+        }, {
+            "id": "E29",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Habit",
+                    "thesaurus_id": "gegenstand:habit"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "weiß",
+                    "thesaurus_id": "farbe:weiß"
+                }
+            ]
+        }, {
+            "id": "E30",
+            "type": "Person",
+            "sname": [
+                {
+                    "value": "Christus",
+                    "thesaurus_id": "sname:christus"
+                }
+            ],
+            "sex": [
+                {
+                    "value": "m"
+                }
+            ]
+        }, {
+            "id": "E31",
+            "type": "Koerperteil",
+            "name": [
+                {
+                    "value": "Bart"
+                }
+            ]
+        }, {
+            "id": "E32",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Lendentuch",
+                    "thesaurus_id": "gegenstand:lendentuch"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "weiß",
+                    "thesaurus_id": "farbe:weiß"
+                }
+            ]
+        }, {
+            "id": "E33",
+            "type": "Person",
+            "sname": [
+                {
+                    "value": "Hl. Johannes Evangelist",
+                    "thesaurus_id": "sname:hl__johannes_evangelist"
+                }
+            ],
+            "sex": [
+                {
+                    "value": "m"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Hl.",
+                    "thesaurus_id": "stand:hl_"
+                }
+            ],
+            "gestus": [
+                {
+                    "value": "Trauergestus",
+                    "thesaurus_id": "gestus:trauergestus"
+                }
+            ]
+        }, {
+            "id": "E34",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Buch",
+                    "thesaurus_id": "attribut:buch"
+                }, {
+                    "value": "H",
+                    "thesaurus_id": "attribut:h"
+                }
+            ]
+        }, {
+            "id": "E35",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Heuke",
+                    "thesaurus_id": "gegenstand:heuke"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "grün",
+                    "thesaurus_id": "farbe:grün"
+                }
+            ]
+        }, {
+            "id": "E36",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Kleiderfutter",
+                    "thesaurus_id": "gegenstand:kleiderfutter"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "rot",
+                    "thesaurus_id": "farbe:rot"
+                }
+            ]
+        }, {
+            "id": "E37",
+            "type": "Person",
+            "sex": [
+                {
+                    "value": "m"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Gerüsteter",
+                    "thesaurus_id": "stand:gerüsteter"
+                }, {
+                    "value": "Gläubiger Hauptmann",
+                    "thesaurus_id": "stand:gläubiger_hauptmann"
+                }
+            ],
+            "gestus": [
+                {
+                    "value": "Zeigegestus",
+                    "thesaurus_id": "gestus:zeigegestus"
+                }
+            ],
+            "tags": [
+                {
+                    "type": "rect",
+                    "dianr": "7019493",
+                    "coordinates": [0.6509158292352646, 0.43055555555555547, 0.16372080868552974, 0.47500000000000003]
+                }
+            ]
+        }, {
+            "id": "E38",
+            "type": "Koerperteil",
+            "name": [
+                {
+                    "value": "Bart"
+                }
+            ]
+        }, {
+            "id": "E39",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Spruchband",
+                    "thesaurus_id": "attribut:spruchband"
+                }
+            ]
+        }, {
+            "id": "E40",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Inschrift",
+                    "thesaurus_id": "gegenstand:inschrift"
+                }
+            ]
+        }, {
+            "id": "E41",
+            "type": "Originalzitat",
+            "text": [
+                {
+                    "value": "VERE FILIVS DEI TB"
+                }
+            ]
+        }, {
+            "id": "E42",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Schwert",
+                    "thesaurus_id": "attribut:schwert"
+                }
+            ]
+        }, {
+            "id": "E43",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Rüstung",
+                    "thesaurus_id": "gegenstand:rüstung"
+                }
+            ],
+            "form": [
+                {
+                    "value": "antikisierend",
+                    "thesaurus_id": "form:antikisierend"
+                }, {
+                    "value": "phantastisch",
+                    "thesaurus_id": "form:phantastisch"
+                }
+            ]
+        }, {
+            "id": "E44",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Tasselmantel",
+                    "thesaurus_id": "gegenstand:tasselmantel"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "rot",
+                    "thesaurus_id": "farbe:rot"
+                }
+            ]
+        }, {
+            "id": "E45",
+            "type": "Person",
+            "sex": [
+                {
+                    "value": "m g"
+                }
+            ],
+            "stand": [
+                {
+                    "value": "Gerüsteter",
+                    "thesaurus_id": "stand:gerüsteter",
+                    "lod_entries": [
+                        {
+                            "source": "ICONCLASS",
+                            "id": "45D313"
+                        }
+                    ]
+                }
+            ]
+        }, {
+            "id": "E46",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Helmbarte",
+                    "thesaurus_id": "attribut:helmbarte"
+                }
+            ]
+        }, {
+            "id": "E47",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Spieß",
+                    "thesaurus_id": "attribut:spieß"
+                }
+            ]
+        }, {
+            "id": "E48",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Helm",
+                    "thesaurus_id": "gegenstand:helm"
+                }
+            ]
+        }, {
+            "id": "E49",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Kesselhaube",
+                    "thesaurus_id": "gegenstand:kesselhaube"
+                }
+            ]
+        }, {
+            "id": "E62",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Test23"
+                }
+            ]
+        }, {
+            "id": "E50",
+            "type": "Person",
+            "sname": [
+                {
+                    "value": "Stephaton",
+                    "thesaurus_id": "sname:stephaton"
+                }
+            ],
+            "sex": [
+                {
+                    "value": "m"
+                }
+            ],
+            "gestus": [
+                {
+                    "value": "Brust zeigend",
+                    "thesaurus_id": "gestus:brust_zeigend"
+                }
+            ]
+        }, {
+            "id": "E51",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Eimer",
+                    "thesaurus_id": "attribut:eimer"
+                }
+            ],
+            "material": [
+                {
+                    "value": "Metall",
+                    "thesaurus_id": "material:metall"
+                }
+            ]
+        }, {
+            "id": "E52",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Schwamm",
+                    "thesaurus_id": "attribut:schwamm"
+                }
+            ]
+        }, {
+            "id": "E53",
+            "type": "Kleidung",
+            "name": [
+                {
+                    "value": "Kittel",
+                    "thesaurus_id": "gegenstand:kittel"
+                }
+            ],
+            "farbe": [
+                {
+                    "value": "braun",
+                    "thesaurus_id": "farbe:braun"
+                }
+            ]
+        }, {
+            "id": "E54",
+            "type": "Person",
+            "sex": [
+                {
+                    "value": "g e"
+                }
+            ]
+        }, {
+            "id": "E55",
+            "type": "Attribut",
+            "name": [
+                {
+                    "value": "Kelch",
+                    "thesaurus_id": "attribut:kelch"
+                }
+            ]
+        }, {
+            "id": "E56",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Test2",
+                    "thesaurus_id": "gegenstand:kreuz"
+                }
+            ]
+        }, {
+            "id": "E58",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Test"
+                }
+            ]
+        }, {
+            "id": "E60",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Test3"
+                }
+            ]
+        }, {
+            "id": "E61",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Test45"
+                }
+            ]
+        }, {
+            "id": "E57",
+            "type": "Objekt",
+            "name": [
+                {
+                    "value": "Schädel Adams",
+                    "thesaurus_id": "gegenstand:schädel_adams"
+                }, {
+                    "value": "Totenkopf",
+                    "thesaurus_id": "gegenstand:totenkopf"
+                }
+            ]
+        }
+    ],
+    "relations": [[0, 1, "Enthält Handlung", "child", true],[0, 2, "Enthält Person", "child", true],[2, 3, "Trägt Kleidungsstück", "child", true],[3, 4, "gehört zu", "child", true],[2, 5, "Trägt Kleidungsstück", "child", true],[2, 6, "Trägt Kleidungsstück", "child", true],[0, 7, "Enthält Person", "child", true],[7, 8, "Trägt Kleidungsstück", "child", true],[7, 9, "Trägt Kleidungsstück", "child", true],[0, 10, "Enthält Person", "child", true],[10, 11, "Trägt Kleidungsstück", "child", true],[10, 12, "Trägt Kleidungsstück", "child", true],[0, 13, "Enthält Person", "child", true],[13, 14, "Trägt Kleidungsstück", "child", true],[14, 15, "gehört zu", "child", true],[13, 16, "Trägt Kleidungsstück", "child", true],[13, 17, "Trägt Kleidungsstück", "child", true],[13, 18, "Trägt Kleidungsstück", "child", true],[0, 19, "Enthält Person", "child", true],[19, 20, "hat Körperteil", "child", true],[19, 21, "hat Körperteil", "child", true],[19, 22, "hat", "child", true],[22, 23, "Gehört zu Objekt", "child", true],[23, 24, "orig.zit.", "child", true],[19, 25, "hat", "child", true],[25, 26, "Gehört zu Objekt", "child", true],[26, 27, "orig.zit.", "child", true],[19, 28, "Trägt Kleidungsstück", "child", true],[0, 29, "Enthält Person", "child", true],[29, 30, "hat Körperteil", "child", true],[29, 31, "Trägt Kleidungsstück", "child", true],[0, 32, "Enthält Person", "child", true],[32, 33, "hat", "child", true],[32, 34, "Trägt Kleidungsstück", "child", true],[34, 35, "gehört zu", "child", true],[0, 36, "Enthält Person", "child", true],[36, 37, "hat Körperteil", "child", true],[36, 38, "hat", "child", true],[38, 39, "Gehört zu Objekt", "child", true],[39, 40, "orig.zit.", "child", true],[36, 41, "hat", "child", true],[36, 42, "Trägt Kleidungsstück", "child", true],[36, 43, "Trägt Kleidungsstück", "child", true],[0, 44, "Enthält Person", "child", true],[44, 45, "hat", "child", true],[44, 46, "hat", "child", true],[44, 47, "Trägt Kleidungsstück", "child", true],[44, 48, "Trägt Kleidungsstück", "child", true],[0, 50, "Enthält Person", "child", true],[50, 51, "hat", "child", true],[50, 52, "hat", "child", true],[50, 53, "Trägt Kleidungsstück", "child", true],[0, 54, "Enthält Person", "child", true],[54, 55, "hat", "child", true],[0, 56, "Enthält Objekt", "child", true],[0, 60, "Enthält Objekt", "child", true],[56, 57, "gehört zu", "child", true],[56, 58, "gehört zu", "child", true],[56, 59, "gehört zu", "child", true],[58, 57, "Bezug", "bezug_cr", false],[56, 59, "Bezug", "bezug_cr", false],[59, 58, "Bezug", "bezug_cr", false]
+    ],
+    "tree": [[0, 0],[1, 1],[2, 1],[3, 2],[4, 3],[5, 2],[6, 2],[7, 1],[8, 2],[9, 2],[10, 1],[11, 2],[12, 2],[13, 1],[14, 2],[15, 3],[16, 2],[17, 2],[18, 2],[19, 1],[20, 2],[21, 2],[22, 2],[23, 3],[24, 4],[25, 2],[26, 3],[27, 4],[28, 2],[29, 1],[30, 2],[31, 2],[32, 1],[33, 2],[34, 2],[35, 3],[36, 1],[37, 2],[38, 2],[39, 3],[40, 4],[41, 2],[42, 2],[43, 2],[44, 1],[45, 2],[46, 2],[47, 2],[48, 2],[50, 1],[51, 2],[52, 2],[53, 2],[54, 1],[55, 2],[56, 1],[57, 2],[58, 2],[59, 2],[60, 1],[49, 0]
+    ]
+}
