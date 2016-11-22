@@ -131,7 +131,7 @@ add_action( 'after_setup_theme', 'singlepage_setup' );
 	$singlepage_custom_css     .=  '#featured-template .nav .cur a{color:'.$home_nav_menu_hover_color.'}';
 	
 	$home_side_nav_menu_color         = of_get_option("home_side_nav_menu_color",'#ffffff');
-	$home_side_nav_menu_active_color  = of_get_option("home_side_nav_menu_active_color",'#23dd91');
+	$home_side_nav_menu_active_color  = of_get_option("home_side_nav_menu_active_color",'#381907');
 	$singlepage_custom_css           .=  '.sub_nav li a{color:'.$home_side_nav_menu_color.';}';
 	$singlepage_custom_css           .=  '#featured-template .sub_nav li.cur a{color:'.$home_side_nav_menu_active_color.' !important;}';
 	
@@ -166,7 +166,7 @@ add_action( 'after_setup_theme', 'singlepage_setup' );
 	if( $homepage_side_nav_menu_typography )
 	$singlepage_custom_css     .=singlepage_options_typography_font_styles($homepage_side_nav_menu_typography ,'#featured-template .sub_nav li,#featured-template .sub_nav li a');
 	
-	$home_side_nav_menu_active_color       = of_get_option("home_side_nav_menu_active_color",'#23dd91');
+	$home_side_nav_menu_active_color       = of_get_option("home_side_nav_menu_active_color",'#381907');
 	if( $blog_menu_hover_color  )
 	$singlepage_custom_css     .=  '#featured-template .sub_nav li.cur,#featured-template .sub_nav li a:hover{color:'.$home_side_nav_menu_active_color.' !important;}';
 	
