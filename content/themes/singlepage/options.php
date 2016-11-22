@@ -499,7 +499,7 @@ function optionsframework_options() {
 			'faces' => singlepage_options_typography_get_os_fonts(),
 			'styles' => false )
 			  );
-	     $options[] = array('name' => __('Side Nav Menu Active Color', 'singlepage'),'id' => 'home_side_nav_menu_active_color' ,'std' => '#23dd91','type'=> 'color');
+	     $options[] = array('name' => __('Side Nav Menu Active Color', 'singlepage'),'id' => 'home_side_nav_menu_active_color' ,'std' => '#381907','type'=> 'color');
 		 
 		 $options[] = array(
 		'name' => __('Side Nav Circle Color', 'singlepage'),

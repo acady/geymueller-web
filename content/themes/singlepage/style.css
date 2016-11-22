@@ -658,7 +658,7 @@ body {
 }
 }
 .widget_area {
-	background-color:rgba(163,196,236,.11);
+	background-color:rgba(163,163,163,.11);
 	width:270px;
 	position:fixed;
 	right:60px;
@@ -889,7 +889,7 @@ nav > ul > li.current_page_item > a,
 	display: none;
 }
 #featured-template .nav .nav_focus {
-	border:1px solid #dcecff;
+	border:1px solid #dddddd;
 	display:none!important;
 	}
 .sub_nav {
@@ -899,7 +899,7 @@ nav > ul > li.current_page_item > a,
 	z-index:99;
 }
 .sub_nav a:hover {
-	color:#23dd91
+	color: rgba(56, 25, 7, 0.71);
 }
 
 .sub_nav ul {
@@ -909,7 +909,7 @@ nav > ul > li.current_page_item > a,
 	padding:6px 0 0
 }
 .sub_nav li {
-	color:#dcecff;
+	color:#dddddd;
 	height:21px;
 	line-height:21px;
 	padding-left:44px;
@@ -922,7 +922,7 @@ nav > ul > li.current_page_item > a,
 	background:url(images/nav_cur.png) 0 50% no-repeat
 }
 .sub_nav .cur {
-	color:#23dd91
+	color: #381907;
 }
 .nav_default{
 	display:none !important;
@@ -1692,13 +1692,13 @@ footer{
 	margin-top:19px;
 }
 .navbar-onex .navbar-toggle:hover {
-	border:1px solid #23dd91;
+	border:1px solid rgba(82, 32, 7, 0.9);
 }
 .navbar-onex .navbar-toggle .icon-bar {
-	background-color:#23dd91;
+	background-color: rgba(82, 32, 7, 0.9);
 }
 .navbar-onex .navbar-toggle:hover .icon-bar {
-	background-color:#23dd91;
+	background-color: rgba(82, 32, 7, 0.9);
 }
 
 
