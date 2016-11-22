@@ -1,7 +1,6 @@
-<?php /* Template Name: Detailseite */
+<?php /* Template Name: Graph */
   get_header();
 ?>
-
 
 <div class="container">
   <div class="row">
