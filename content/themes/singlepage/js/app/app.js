@@ -8,9 +8,9 @@ define(['controllers', 'directives', 'filters', 'lodash'], function () {
       rewriteLinks: false
     });
 
-    var detailOptions = {
+    $stateProvider.state('detail', {
       template: '<div class="d3-graph"> </div>',
-      url: '/graphtest/',
+      url: '/graph/',
       controller: 'GraphController',
       resolve: {
         hit: ['config', '$http', '$location', '$q', function (config, $http, $location, $q) {
@@ -31,15 +31,12 @@ define(['controllers', 'directives', 'filters', 'lodash'], function () {
           });
           return deferred.promise;
         }],
-          data: ['hit', 'productservice', function (hit, productservice) {
+        data: ['hit', 'productservice', function (hit, productservice) {
           return productservice.retrieveData(hit);
         }]
       }
-    };
-    $stateProvider.state('detail', detailOptions);
+    });
 
-    // detailOptions.url = '/en/graphtest/';
-    // $stateProvider.state('detail-en', detailOptions);
 
   }]);
 
