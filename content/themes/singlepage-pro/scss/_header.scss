@@ -1,0 +1,191 @@
+
+$header-height: 115px;
+$outer-padding: 115px;
+$menu-icon-height: 30px;
+
+#header {
+  @include make-row();
+  
+  > div {
+    height: $header-height;
+  }
+  
+}
+
+
+.header-logo {
+  @include make-sm-column(3);
+  padding-left: $outer-padding;
+  padding-top: 25px;
+}
+
+.menu-container {
+  @include make-sm-column(9);
+  padding-right: $outer-padding;
+  padding-top: $header-height / 4;
+  text-align: right;
+  
+  ul {
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover, a:active, a:focus {
+         text-decoration: none;
+         color: $brand-primary;
+       }
+
+      a:hover span, a:active span, a:focus span {
+        text-decoration: none;
+        color: $brand-primary;
+
+      }
+
+      
+      &.current-menu-item a, &.current-menu-item a:hover {
+        span, span:before {
+          color: $brand-primary;
+        }
+      }
+      
+      &.menu-icon-suche span:before {
+        @extend [class^="icon-"];
+        @extend .icon-Realienkunde-_Suche;
+      }
+      
+      &.menu-icon-wunschliste span:before {
+        @extend [class^="icon-"];
+        @extend .icon-Realienkunde-_Wunschliste;
+      }
+      
+      &.menu-icon-blog span:before {
+        @extend [class^="icon-"];
+        @extend .icon-Realienkunde-_Blog;
+      }
+      
+      &.menu-icon-warenkorb span:before {
+        @extend [class^="icon-"];
+        @extend .icon-Realienkunde-_Warenkorb;
+      }
+
+      &.menu-icon-fotobestellung span:before {
+        @extend [class^="icon-"];
+        @extend .icon-Realienkunde-_Fotobestellung;
+      }
+
+      &.menu-icon-faq span:before {
+        @extend [class^="icon-"];
+        @extend .icon-Realienkunde-_Faq;
+      }
+
+      &.menu-icon-imareal span:before {
+        @extend [class^="icon-"];
+        @extend .icon-imareal;
+      }
+      &.menu-icon-no-imareal span:before {
+        @extend [class^="icon-"];
+        @extend .icon-no-imareal;
+      }
+      span:before {
+        
+        @extend .glyphicon;
+        
+        font-size: $menu-icon-height;
+        margin-right: 3px;
+      }
+      
+      span {
+        font-size: 12px;
+        line-height: $menu-icon-height;
+        vertical-align: top;
+      }
+      
+    }
+  }
+  
+}
+/*
+.tab-container {
+  &.menu-icon-ensemble {
+    @extend [class^="icon-"];
+    @extend .icon-Realienkunde-_Ensemble;
+  }
+}
+*/
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /*line-height: 1;*/
+  -webkit-font-smoothing: antialiased;
+  /*color: #950848;*/
+}
+
+.menu-icon-ensemble {
+  margin: 0 10px 0 0;
+}
+/*
+.menu-icon-ensemble:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}*/
+
+/* QTranslate menu */
+
+.qtranxs-lang-menu span {
+  /*display: none;*/
+  height: 1px !important;
+}
+
+.qtranxs-lang-menu .sub-menu {
+  display: block;
+}
+
+.languageMenu { display: block; bottom: 0; background: none; }
+.languageMenu ul { display:inline; /* float:right; */}
+.languageMenu li { list-style-type: none; display: inline; font-size: 12px; }
+.languageMenu li a {
+  color: #000;
+  line-height:15px;
+  text-decoration:none;
+  font-weight:normal;
+  border-right: thin solid $brand-primary;
+  padding: 0 7px 0 3px;
+}
+
+.languageMenu li a:hover { color:$brand-primary; text-decoration:none;}
+.languageMenu li:last-child > a {border-right: none;} /* remove pipe from last item */
+
+.language-title {
+
+}
+.languageMenu .sub-menu {
+  padding-left: 5px;
+}
+
+
+.languageMenu .sub-menu li a:hover {
+  color:#999999; text-decoration:none;
+}
+.languageMenu .sub-menu li a:active, .languageMenu .sub-menu li a:focus {
+  color:$brand-primary; text-decoration:none;
+}
+
+.languageMenu .sub-menu li {
+  margin: 0;
+}
+

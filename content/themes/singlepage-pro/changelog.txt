@@ -1,0 +1,239 @@
+===== Change Log =====
+
+= Version 2.6.5
+* Fixed responsive menu issue on mobile( landscape )
+
+= Version 2.6.4
+* Added 'Demo Import' option
+
+= Version 2.6.3
+* Added 'Custom Side Nav Circle Image' option
+
+= Version 2.6.2
+* Added "Google Map API Key" option
+* Fixed responsive menu issue
+
+= Version 2.6.1
+* Added shortcode - Post Data
+
+= Version 2.6.0 =
+* Added Load Google Fonts option
+
+= Version 2.5.9 =
+* Compatibility with the WPML Multilingual Plugin.
+
+= Version 2.5.8 =
+* Updated Font Awesome
+
+= Version 2.5.7 =
+* Fixed Section Menu External Link issue
+* Added Section Menu External Link Target option
+
+= Version 2.5.6 =
+* Fixed service shortcode animation issue
+
+= Version 2.5.5 =
+* Added controls for YouTube video background
+* Removed Favicon option
+
+= Version 2.5.4 =
+* Fixed testimonial shortcode issue
+* Fixed title shortcode issue
+
+= Version 2.5.3 =
+* Fixed progress bar shortcode issue
+
+= Version 2.5.2 =
+* Fixed testimonials shortcode issue
+
+= Version 2.5.1 =
+* ( Home Page Sections) Compatible With Polylang plugin
+
+= Version 2.5.0 =
+* Added Header Image to pages & home page header
+* Added scrolling button css class 'scroll'
+
+= Version 2.4.9 =
+* Fixed home page html5 video background issue 
+
+= Version 2.4.8 =
+* Fixed home page sidebar menu active item issue
+
+= Version 2.4.7 =
+* Added 'Section Height Mode on Mobile' theme option
+* Improve home page scrolling performance
+
+= Version 2.4.6 =
+* Added home page YouTube video background options
+
+= Version 2.4.5 =
+* Fixed HTML5 video play button issue
+
+= Version 2.4.4 =
+* Added home page section content background color option
+* Added home page html5 video background controller
+* Fixed HTML5 video background issue
+
+= Version 2.4.3 =
+* WooCommerce compatible
+
+= Version 2.4.2 =
+* Theme Options Import/Export optimization 
+* Added Pages & Posts Title Typography option
+
+= Version 2.4.1 =
+* Added Drag & Drop Section Controller
+* Fixed home page sidebar menu active item issue
+
+= Version 2.4.0 =
+* Added 'Delete section' function
+
+ Version 2.3.9
+ * Improve home page performance
+
+ Version 2.3.8
+ * Fixed sub-menu issue on tablet
+ * Fixed home page sidebar menu style 2 'close' status issue on tablet
+ 
+ Version 2.3.7
+ * Fixed sub-menu issue on mobile devices
+
+ Version 2.3.6
+ * Fixed background video issue
+ 
+ Version 2.3.5
+ * Fixed SinglePage Slider shortcode id issue
+ 
+ Version 2.3.4
+ * Change bars icon for home page sidebar menu style 2
+ * Removed option > 'Enable Featured Homepage' ( This feature has been transferred to 'Home Page' template. Usage: add a new page > select 'Home Page' template & publish > go to Settings > Reading > Front page displays, check 'A static page (select below)', then select this new page for 'Front page' )
+ * Added 'Home Page' template
+
+ Version 2.3.3
+ * Added home page sidebar background option
+ * Added home page Google map marker icon option
+ * Added home page Google map InfoWindow option
+
+ Version 2.3.2
+ * Added more homepage full screen google map options
+ * Added contact form shortcode
+ 
+ Version 2.3.1
+ * Added Section Full Width option
+ * Added Section Menu Slug option
+ * Added Theme Options Import/Export
+ * Added Home Page Top Menu Theme location of Menu Settings
+ 
+ Version 2.3.0
+ * Added an auto-update function
+ 
+ Version 2.2.9
+ * Added home page sidebar menu style 2
+ * Added section background for mobile devices  
+
+ Version 2.2.8
+ * Extended to 10 home page sections
+ 
+ Version 2.2.7
+ * Added HTML5 video background
+ * Added homepage full screen google map
+ * Fixed translation issues
+ * Fixed Homepage Side Nav Menu Typography option issue
+ 
+ Version 2.2.6
+ * Unable to display Multiple Singlepage Sliders on Homepage Resolved
+ * Added Singlepage Slider options
+ 
+ Version 2.2.5
+ * Added Singlepage Slider shortcode
+ 
+ Version 2.2.4
+ * Fixed section content typography issue
+ 
+ Version 2.2.3
+ * Responsive optimization
+ 
+ Version 2.2.2
+ * Fixed header image issue
+
+ Version 2.2.1
+ * Fixed SinglePage Slider Shortcode compatibility issue
+ 
+ Version 2.2.0
+ * Responsive Optimization
+ 
+ Version 2.1.9
+ * Fixed Google map shortcode issue
+ 
+ Version 2.1.8
+ * Fixed singlepage slider HTML video issue
+ 
+ Version 2.1.7
+ * Fixed section content google fonts issue
+
+ Version 2.1.6
+ * Fixed home page menu hover color issue
+ 
+ Version 2.1.5
+ * Fixed duplicate title tag issue
+ * Added two single post styles
+ 
+ Version 2.1.4
+ * Added blog title color options
+ * Added blog meta hidden options
+ 
+ Version 2.1.3
+ * Fixed Tagline hide issue
+ 
+ Version 2.1.2
+ * Fixed homepage section issue in Firefox
+  
+ Version 2.1.1
+ * Fixed menu issue on the portrait view on ipad
+
+ Version 2.1.0
+ * Added Section Height Mode option
+ 
+ Version 2.0.9
+ * Modified homepage section mode
+ * Added homepage footer
+ 
+ Version 2.0.8
+ * Added copyright option
+ 
+ Version 2.0.7
+ * Added google fonts
+ 
+ Version 2.0.6
+ * Form Maker Compatible 
+ 
+ Version 2.0.5
+ * Fixed list shortcode icon color issue
+ * Hide homepage footer.
+ 
+ Version 2.0.4
+ * Added homepage scrolling delay option
+  
+ Version 2.0.3
+ * Optimized section content container width
+ 
+ Version 2.0.2
+ * Added Side Nav Circle Color selector
+ 
+ Version 2.0.1
+ * Fixed Singlepage Slider slash issue
+ * Fixed Singlepage Slider volume issue
+  
+ Version 1.1.1
+ * Optimized menu style
+ * Modified page template file
+
+ Version 1.1.0
+ * Fix for WordPress stripping iFrames and Script Tags from Editor
+ * Added theme support  "title-tag"
+ * Fixed favicon icon issue
+ * Added custom css option
+ * Added homepage menu color options
+ 
+ Version 1.0.9
+ * Fixed Home Page background image issue.

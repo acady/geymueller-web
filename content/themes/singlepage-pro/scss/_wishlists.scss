@@ -1,0 +1,19 @@
+
+.wl-form form {
+  
+  .input-text, textarea {
+    @extend .form-control;
+  }
+  
+}
+
+.woocommerce-message {
+  @extend .alert;
+  @extend .alert-info;
+}
+
+.wocommerce_checkout_imgfee {
+  color: "#CCC";
+  font-size: 13px;
+  margin-left: 30px;
+}

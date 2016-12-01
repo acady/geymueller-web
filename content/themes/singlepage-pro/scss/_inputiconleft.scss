@@ -1,0 +1,16 @@
+
+.has-icon-left {
+  
+  position: relative;
+  
+  .glyphicon.icon-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+}
