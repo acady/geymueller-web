@@ -7,9 +7,9 @@
         <img ng-src="{{ retrieveImageUrl(hit) }}" alt="{{ hit.Objekt }}" class="hit-img">
       </button>
       <div>
-        <div class="hit-wishlist">
-          <add-to-wishlist-button product="hit"></add-to-wishlist-button>
-        </div>
+<!--        <div class="hit-wishlist">-->
+<!--          <add-to-wishlist-button product="hit"></add-to-wishlist-button>-->
+<!--        </div>-->
         <div class="hit-text-full">
           <searchhit data-content="bildthema" data-label></searchhit>
           <searchhit data-content="archivnr" data-label></searchhit>
