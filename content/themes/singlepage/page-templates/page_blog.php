@@ -43,7 +43,6 @@ get_header();
       </li>
       -->
   </ul>
-  
   <div class="collection-info">
     <span class="collection-name">Kollektionsname:</span> 14.393 Ergebnisse
   </div>
