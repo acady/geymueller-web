@@ -11,15 +11,15 @@ msgstr ""
 "Language: de\n"
 "Project-Id-Version: WordPress - 4.5.x - Administration\n"
 
-#: wp-admin/update-core.php:261 wp-admin/update-core.php:271
+#: wp-admin/update-core.php:263 wp-admin/update-core.php:273
 msgid "Compatibility with WordPress %1$s: %2$d%% (%3$d \"works\" votes out of %4$d total)"
 msgstr "Kompatibilität mit WordPress %1$s: %2$d%% (%3$d \"funktioniert\" Stimmen von insgesamt %4$d)"
 
-#: wp-admin/update-core.php:263 wp-admin/update-core.php:273
+#: wp-admin/update-core.php:265 wp-admin/update-core.php:275
 msgid "Compatibility with WordPress %1$s: Unknown"
 msgstr "Kompatibilität mit WordPress %1$s: unbekannt"
 
-#: wp-admin/widgets.php:115
+#: wp-admin/widgets.php:117
 msgid "Drag widgets here to remove them from the sidebar but keep their settings."
 msgstr "Willst du Widgets entfernen, aber ihre Einstellungen behalten, ziehe sie hierher."
 
@@ -211,23 +211,23 @@ msgstr "Du kannst diesen Benutzer nicht löschen."
 msgid "Other users have been deleted."
 msgstr "Andere Benutzer sind gelöscht worden."
 
-#: wp-admin/widgets.php:112
+#: wp-admin/widgets.php:114
 msgid "Inactive Widgets"
 msgstr "Inaktive Widgets"
 
-#: wp-admin/widgets.php:269
+#: wp-admin/widgets.php:271
 msgid "Widget %s"
 msgstr "Widget %s"
 
-#: wp-admin/widgets.php:320
+#: wp-admin/widgets.php:322
 msgid "Save Widget"
 msgstr "Widget speichern"
 
-#: wp-admin/widgets.php:341
+#: wp-admin/widgets.php:343
 msgid "Error in displaying the widget settings form."
 msgstr "Fehler beim Anzeigen des Einstellungsformular für Widgets."
 
-#: wp-admin/widgets.php:386
+#: wp-admin/widgets.php:388
 msgid "Available Widgets"
 msgstr "Verfügbare Widgets"
 
@@ -235,7 +235,7 @@ msgstr "Verfügbare Widgets"
 msgid "Installing Theme: %s"
 msgstr "Installiere Theme: %s"
 
-#: wp-admin/widgets.php:61
+#: wp-admin/widgets.php:63
 msgid "Widgets may be used multiple times. You can give each widget a title, to display on your site, but it&#8217;s not required."
 msgstr "Widgets können auch mehrfach verwendet werden. Du kannst Widgets auch Titel geben, die dann auf der Website angezeigt werden."
 
@@ -259,24 +259,24 @@ msgstr "Erneut installieren"
 msgid "You are about to install WordPress %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released."
 msgstr "Du bist dabei, WordPress %s in <strong>englisch (US)</strong> zu installieren. Es kann sein, dass die Aktualisierung deine Installation beschädigt. Außerdem solltest du vielleicht warten, bis eine übersetzte Version erschienen ist."
 
-#: wp-admin/update-core.php:549 wp-admin/update-core.php:588
+#: wp-admin/update-core.php:551 wp-admin/update-core.php:590
 msgid "WordPress Updates"
 msgstr "WordPress-Aktualisierungen"
 
-#: wp-admin/update-core.php:593
+#: wp-admin/update-core.php:595
 msgid "Please select one or more themes to update."
 msgstr "Bitte wähle ein oder mehrere Themes, die aktualisiert werden sollen."
 
-#: wp-admin/update-core.php:595
+#: wp-admin/update-core.php:597
 msgid "Please select one or more plugins to update."
 msgstr "Bitte wähle ein oder mehrere Plugins, die aktualisiert werden sollen."
 
 #. translators: %1 date, %2 time.
-#: wp-admin/update-core.php:601
+#: wp-admin/update-core.php:603
 msgid "Last checked on %1$s at %2$s."
 msgstr "Zuletzt geprüft am %1$s um %2$s."
 
-#: wp-admin/update-core.php:602
+#: wp-admin/update-core.php:604
 msgid "Check Again"
 msgstr "Erneut prüfen"
 
@@ -298,16 +298,16 @@ msgstr "Alle Plugins sind auf dem neuesten Stand."
 
 #. translators: 1: plugin version, 2: new version
 #. translators: 1: theme version, 2: new version
-#: wp-admin/update-core.php:309 wp-admin/update-core.php:381
+#: wp-admin/update-core.php:311 wp-admin/update-core.php:383
 msgid "You have version %1$s installed. Update to %2$s."
 msgstr "Du hast Version %1$s installiert. Aktualisiere auf Version %2$s."
 
-#: wp-admin/update-core.php:341
+#: wp-admin/update-core.php:343
 msgid "Your themes are all up to date."
 msgstr "Alle Themes sind auf dem neuesten Stand."
 
-#: wp-admin/update-core.php:352 wp-admin/update-core.php:400
-#: wp-admin/update-core.php:694 wp-admin/update-core.php:699
+#: wp-admin/update-core.php:354 wp-admin/update-core.php:402
+#: wp-admin/update-core.php:696 wp-admin/update-core.php:701
 msgid "Update Themes"
 msgstr "Themes aktualisieren"
 
@@ -427,7 +427,7 @@ msgstr "Keine Bestätigungs-E-Mail"
 msgid "Screen Display"
 msgstr "Bildschirmanzeige"
 
-#: wp-admin/update-core.php:570
+#: wp-admin/update-core.php:572
 msgid "How to Update"
 msgstr "Wie aktualisiere ich WordPress?"
 
@@ -443,11 +443,11 @@ msgstr "Benutzerrollen"
 msgid "You must assign a password to the new user, which they can change after logging in. The username, however, cannot be changed."
 msgstr "Du musst dem neuen Benutzer ein Passwort zuweisen, welches er aber jederzeit selber ändern kann. Der Benutzername kann jedoch später nicht geändert werden."
 
-#: wp-admin/widgets.php:58
+#: wp-admin/widgets.php:60
 msgid "Removing and Reusing"
 msgstr "Entfernen und Wiederherstellen"
 
-#: wp-admin/widgets.php:66
+#: wp-admin/widgets.php:68
 msgid "Missing Widgets"
 msgstr "Fehlende Widgets"
 
@@ -594,11 +594,11 @@ msgstr "Fehler: %s"
 msgid "Future security updates will be applied automatically."
 msgstr "Künftige Sicherheitsupdates werden automatisch durchgeführt."
 
-#: wp-admin/update-core.php:412 wp-admin/update-core.php:420
+#: wp-admin/update-core.php:414 wp-admin/update-core.php:422
 msgid "Translations"
 msgstr "Übersetzungen"
 
-#: wp-admin/update-core.php:413
+#: wp-admin/update-core.php:415
 msgid "Your translations are all up to date."
 msgstr "Deine Übersetzungen sind alle auf dem neuesten Stand."
 
@@ -606,7 +606,7 @@ msgstr "Deine Übersetzungen sind alle auf dem neuesten Stand."
 msgid "Update Available"
 msgstr "Aktualisierung verfügbar"
 
-#: wp-admin/widgets.php:504
+#: wp-admin/widgets.php:506
 msgid "Add Widget"
 msgstr "Widget hinzufügen"
 
@@ -614,7 +614,7 @@ msgstr "Widget hinzufügen"
 msgid "Search installed themes..."
 msgstr "Nach installierten Themes suchen …"
 
-#: wp-admin/update-core.php:561
+#: wp-admin/update-core.php:563
 msgid "In most cases, WordPress will automatically apply maintenance and security updates in the background for you."
 msgstr "In den meisten Fällen wird WordPress Wartungs- und Sicherheits-Updates für Dich automatisch im Hintergrund ausführen."
 
@@ -622,7 +622,7 @@ msgstr "In den meisten Fällen wird WordPress Wartungs- und Sicherheits-Updates 
 msgid "The current theme is displayed highlighted as the first theme."
 msgstr "Das aktuelle Theme wird hervorgehoben als erstes Theme angezeigt."
 
-#: wp-admin/widgets.php:390
+#: wp-admin/widgets.php:392
 msgid "To activate a widget drag it to a sidebar or click on it. To deactivate a widget and delete its settings, drag it back."
 msgstr "Zieh ein Widget in eine Seitenleiste oder klicke darauf, um es zu aktivieren. Zieh es wieder zurück, um das Widget zu deaktivieren und seine Einstellungen zu löschen."
 
@@ -653,7 +653,7 @@ msgctxt "Add new theme"
 msgid "Add New"
 msgstr "Installieren"
 
-#: wp-admin/update-core.php:562
+#: wp-admin/update-core.php:564
 msgid "<strong>Themes and Plugins</strong> &mdash; To update individual themes or plugins from this screen, use the checkboxes to make your selection, then <strong>click on the appropriate &#8220;Update&#8221; button</strong>. To update all of your themes or plugins at once, you can check the box at the top of the section to select all before clicking the update button."
 msgstr "<strong>Themes und Plugins</strong> &ndash; Um einzelne Themes oder Plugins auf diesem Bildschirm zu aktualisieren, markiere bitte die Auswahlfelder und <strong>klicke dann auf den zugehörigen Button &#8222;Aktualisierung&#8220;</strong>. Um alle Themes und Plugins auf einmal zu aktualisieren, wählst du das Kästchen oberhalb der Auswahl aus und klickst dann auf &#8222;Aktualisieren&#8220;."
 
@@ -689,7 +689,7 @@ msgstr "&#8222;Press This&#8220;-Bookmarklet-Code kopieren"
 msgid "Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it."
 msgstr "Ziehe das folgende Bookmarklet in deine Lesezeichenleiste. Wenn du dann auf einer Seite bist, die du teilen möchtest, kannst du es einfach anklicken."
 
-#: wp-admin/widgets.php:74
+#: wp-admin/widgets.php:76
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Widgets_Screen\" target=\"_blank\">Documentation on Widgets</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Appearance_Widgets_Screen\" target=\"_blank\">Documentation on Widgets (engl.)</a>"
 
@@ -745,7 +745,7 @@ msgstr "Bei der Suche nach installierten Themes wird nach Begriffen in deren Nam
 msgid "You have specified these users for deletion:"
 msgstr "Du hast folgende Benutzer zum Löschen markiert:"
 
-#: wp-admin/update-core.php:422
+#: wp-admin/update-core.php:424
 msgid "New translations are available."
 msgstr "Es stehen neue Übersetzungen zur Verfügung."
 
@@ -773,7 +773,7 @@ msgstr "Dieses Theme hat noch keine Bewertung."
 msgid "Adding Themes"
 msgstr "Themes hinzufügen"
 
-#: wp-admin/update-core.php:461
+#: wp-admin/update-core.php:463
 msgid "Update WordPress"
 msgstr "WordPress aktualisieren"
 
@@ -859,7 +859,7 @@ msgstr "Du kannst dir alle Beiträge eines bestimmten Benutzers anschauen, indem
 msgid "Your username cannot be changed, but you can use other fields to enter your real name or a nickname, and change which name to display on your posts."
 msgstr "Der Benutzername kann nicht geändert werden. Jedoch können die anderen Felder ausgefüllt und anschließend ausgewählt werden, welcher Name (Benutzername, Realname, Spitzname) öffentlich – zum Beispiel in Beiträgen – angezeigt werden soll."
 
-#: wp-admin/update-core.php:348
+#: wp-admin/update-core.php:350
 msgid "The following themes have new versions available. Check the ones you want to update and then click &#8220;Update Themes&#8221;."
 msgstr "Für die folgenden Themes liegen Aktualisierungen vor. Markiere diejenigen, die du aktualisieren möchtest und klicke auf &#8222;Themes aktualisieren&#8220;."
 
@@ -893,9 +893,9 @@ msgstr "Um einen neuen Benutzer zu deiner Website hinzuzufügen, fülle das Form
 msgid "User removed from this site."
 msgstr "Benutzer von diese Website entfernt."
 
-#: wp-admin/update-core.php:23 wp-admin/update-core.php:626
-#: wp-admin/update-core.php:650 wp-admin/update-core.php:678
-#: wp-admin/update-core.php:708
+#: wp-admin/update-core.php:23 wp-admin/update-core.php:628
+#: wp-admin/update-core.php:652 wp-admin/update-core.php:680
+#: wp-admin/update-core.php:710
 msgid "You do not have sufficient permissions to update this site."
 msgstr "Du hast nicht die erforderlichen Rechte, um diese Website zu aktualisieren."
 
@@ -946,7 +946,7 @@ msgstr "Favoriten"
 msgid "If you have marked themes as favorites on WordPress.org, you can browse them here."
 msgstr "Wenn du Themes auf WordPress.org als Favoriten markiert hast, kannst du sie hier durchstöbern."
 
-#: wp-admin/widgets.php:436
+#: wp-admin/widgets.php:438
 msgid "This will clear all items from the inactive widgets list. You will not be able to restore any customizations."
 msgstr "Damit werden alle Elemente von deiner Liste inaktiver Widgets gelöscht. Du wirst keine Anpassungen wiederherstellen können."
 
@@ -970,7 +970,7 @@ msgstr "Themesliste"
 msgid "Install Parent Theme"
 msgstr "Elterntheme installieren"
 
-#: wp-admin/update-core.php:552
+#: wp-admin/update-core.php:554
 msgid "On this screen, you can update to the latest version of WordPress, as well as update your themes, plugins, and translations from the WordPress.org repositories."
 msgstr "In dieser Ansicht kannst du WordPress auf die neueste Version aktualisiere. Deine Themes, Plugins und Übersetzung kannst du hier ebenfalls auf den neuesten Stand bringen."
 
@@ -990,7 +990,7 @@ msgstr "Navigation der Benutzerliste"
 msgid "Media items list navigation"
 msgstr "Navigation der Medienelementeliste"
 
-#: wp-admin/widgets.php:426
+#: wp-admin/widgets.php:428
 msgid "Clear Inactive Widgets"
 msgstr "Inaktive Widgets löschen"
 
@@ -1020,7 +1020,7 @@ msgstr "Benutzer-Benachrichtigung senden"
 msgid "ID #%1$s: %2$s <strong>You don&#8217;t have permission to remove this user.</strong>"
 msgstr "ID #%1$s: %2$s <strong>Du hast keine Berechtigung, diesen Benutzer zu löschen.</strong>"
 
-#: wp-admin/update-core.php:576
+#: wp-admin/update-core.php:578
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\" target=\"_blank\">Documentation on Updating WordPress</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\" target=\"_blank\">Documentation on Updating WordPress (engl.)</a>"
 
@@ -1058,7 +1058,7 @@ msgstr "Folge dem Link, um Press This zu öffnen. Dann füge ihn den Lesezeichen
 msgid "Use the arrow buttons at the top of the dialog, or the left and right arrow keys on your keyboard, to navigate between media items quickly."
 msgstr "Benutze die Pfeil-Buttons am oberen Rand oder die Pfeiltasten auf deiner Tastatur, um schnell zwischen den Medienelementen zu navigieren."
 
-#: wp-admin/update-core.php:565
+#: wp-admin/update-core.php:567
 msgid "<strong>Translations</strong> &mdash; The files translating WordPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button."
 msgstr "<strong>Übersetzungen</strong> &ndash; Die Dateien, die WordPress in deine Sprache übersetzen, werden für Dich aktualisiert, sobald an anderer Stelle Aktualisierungen ausgeführt werden. Du kannst aber auch <strong>den Button &#8222;Übersetzungen aktualisieren&#8220; klicken</strong>, wenn die Dateien nicht mehr aktuell sein sollten."
 
@@ -1102,7 +1102,7 @@ msgstr ""
 msgid "Super admin privileges cannot be removed because this user has the network admin email."
 msgstr "Diesem Benutzer können nicht die Super-Administratoren-Rechte entzogen werden, da dieser Benutzer als E-Mail-Adresse die des Netzwerk Administrators hat."
 
-#: wp-admin/widgets.php:68
+#: wp-admin/widgets.php:70
 msgid "Many themes show some sidebar widgets by default until you edit your sidebars, but they are not automatically displayed in your sidebar management tool. After you make your first widget change, you can re-add the default widgets by adding them from the Available Widgets area."
 msgstr "Viele Themes zeigen bereits von Haus aus bestimmte Widgetähnliche Navigationselemente in den Navigationsbereichen (Seitenleiste). Diese werden oft deaktivert, sobald du eigene Widgets hinzufügst. Du kannst jedoch einfach die ursprünglich benutzten Widgets erneut hinzufügen."
 
@@ -1114,19 +1114,19 @@ msgstr "Dein Profil enthält die Informationen deines Benutzerkontos und einige 
 msgid "This user has super admin privileges."
 msgstr "Dieser Benutzer hat Super-Administratoren-Rechte."
 
-#: wp-admin/widgets.php:280
+#: wp-admin/widgets.php:282
 msgid "Select both the sidebar for this widget and the position of the widget in that sidebar."
 msgstr "Wähle die Seitenleiste für das Widget und seine Position darin."
 
-#: wp-admin/widgets.php:79
+#: wp-admin/widgets.php:81
 msgid "The theme you are currently using isn&#8217;t widget-aware, meaning that it has no sidebars that you are able to change. For information on making your theme widget-aware, please <a href=\"https://codex.wordpress.org/Widgetizing_Themes\">follow these instructions</a>."
 msgstr "Dein aktuell genutztes Theme unterstützt keine Widgets. Das bedeutet, dass es keine Seitenleiste gibt, die du ändern könntest. Was du machen musst, damit dein Theme Widgets unterstützt, kannst du <a href=\"https://codex.wordpress.org/Widgetizing_Themes\">hier nachlesen</a>."
 
-#: wp-admin/widgets.php:95
+#: wp-admin/widgets.php:97
 msgid "Inactive Sidebar (not used)"
 msgstr "Inaktive Seitenleiste (ungenutzt)"
 
-#: wp-admin/widgets.php:98
+#: wp-admin/widgets.php:100
 msgid "This sidebar is no longer available and does not show anywhere on your site. Remove each of the widgets below to fully remove this inactive sidebar."
 msgstr "Diese Seitenleiste steht nicht mehr zur Verfügung und wird auch nicht mehr angezeigt. Entferne alle noch in dieser Seitenleiste eingetragenen Widgets, um diese inaktive Seitenleiste komplett zu entfernen."
 
@@ -1134,11 +1134,11 @@ msgstr "Diese Seitenleiste steht nicht mehr zur Verfügung und wird auch nicht m
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Da dies eine Netzwerk-Installation (Multisite) ist, kannst du existierende Benutzer aus anderen Websites dieses Netzwerks einfach hinzufügen, indem du einen Benutzernamen oder eine E-Mail-Adresse angibst sowie eine Benutzerrolle festlegst. Für weitere Optionen (wie Passwörter festlegen), musst du Netzwerk-Administrator sein. Du kannst dann über Netzwerkverwaltung &gt; Alle Benutzer das Profil des Benutzers verändern."
 
-#: wp-admin/update-core.php:553
+#: wp-admin/update-core.php:555
 msgid "If an update is available, you&#8127;ll see a notification appear in the Toolbar and navigation menu."
 msgstr "Sobald eine Aktualisierung verfügbar ist, siehst du einen Hinweis in der Werkzeugleiste und dem Navigationsmenü."
 
-#: wp-admin/update-core.php:561
+#: wp-admin/update-core.php:563
 msgid "<strong>WordPress</strong> &mdash; Updating your WordPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update Now&#8221; button</strong> when you are notified that a new version is available."
 msgstr "<strong>WordPress</strong> &ndash; Die Aktualisierung deiner WordPress-Installation ist jetzt noch einfacher: <strong>klick auf den Button &#8222;Jetzt Aktualisieren&#8220;</strong> sobald du einen Hinweis erhältst, dass eine neue Version verfügbar ist."
 
@@ -1154,7 +1154,7 @@ msgstr "Löschen ruft zur Bestätigung ein Dialogfenster zum Löschen des Nutzer
 msgid "You cannot delete a theme while it has an active child theme."
 msgstr "Du kannst ein Theme nicht löschen, solange ein Child-Theme davon aktiv ist."
 
-#: wp-admin/update-core.php:349
+#: wp-admin/update-core.php:351
 msgid "<strong>Please Note:</strong> Any customizations you have made to theme files will be lost. Please consider using <a href=\"%s\">child themes</a> for modifications."
 msgstr "<strong>Beachte bitte:</strong> Alle Anpassungen, die du am Theme vorgenommen hast, werden verloren gehen. Ziehe in Erwägung, <a href=\"%s\">Child-Themes</a> zu nutzen, um Modifikationen vorzunehmen."
 
@@ -1264,16 +1264,16 @@ msgstr[1] "%s Benutzer gelöscht."
 msgid "The following themes are installed but incomplete."
 msgstr "Die folgenden Themes sind installiert, aber nicht vollständig."
 
-#: wp-admin/widgets.php:53
+#: wp-admin/widgets.php:55
 msgid "Widgets are independent sections of content that can be placed into any widgetized area provided by your theme (commonly called sidebars). To populate your sidebars/widget areas with individual widgets, drag and drop the title bars into the desired area. By default, only the first widget area is expanded. To populate additional widget areas, click on their title bars to expand them."
 msgstr "Widgets sind Module, die bestimmte Funktionen bieten und Ausgaben erzeugen und einfach per Drag &#38; Drop (Ziehen und Ablegen) auf vorgesehene Flächen im Theme platziert werden können. Viele Themes bieten mehrere Seitenleisten (Flächen für Navigation etc.) oder Widgetbereiche. Standardmäßig ist nur der erste Widgetbereich aufgeklappt. Nutze einfach die Pfeile im Titel der anderen Widgetflächen, um sie aufzuklappen, die enthaltenen Widgets zu sehen und neue hinzuzufügen."
 
-#: wp-admin/widgets.php:62
+#: wp-admin/widgets.php:64
 msgid "Enabling Accessibility Mode, via Screen Options, allows you to use Add and Edit buttons instead of using drag and drop."
 msgstr "Du kannst über den Tab &#8222;Ansicht anpassen&#8220; auch den Zugänglichkeitsmodus aktivieren, wenn du anstelle von Drag &#38; Drop (Ziehen und Ablegen) lieber Buttons zum Hinzufügen und Entfernen verwenden möchtest."
 
 #. translators: %s: plugin version
-#: wp-admin/update-core.php:290
+#: wp-admin/update-core.php:292
 msgid "View version %s details."
 msgstr "Details der Version %s anzeigen."
 
@@ -1289,7 +1289,7 @@ msgstr "Das in der Vorschau angezeigte Theme ist völlig interaktiv &mdash; navi
 msgid "Remember to click the Add New User button at the bottom of this screen when you are finished."
 msgstr "Vergiss nicht, unten auf dieser Seite auf &#8222;Neuen Benutzer hinzufügen&#8220; zu klicken, wenn du fertig bist."
 
-#: wp-admin/widgets.php:54
+#: wp-admin/widgets.php:56
 msgid "The Available Widgets section contains all the widgets you can choose from. Once you drag a widget into a sidebar, it will open to allow you to configure its settings. When you are happy with the widget settings, click the Save button and the widget will go live on your site. If you click Delete, it will remove the widget."
 msgstr "Im Bereich <strong>Verfügbare Widgets</strong> siehst du alle Widgets, die du benutzen kannst, indem du sie einfach auf eine Seitenleiste bzw. Widgetbereich ziehst. Mit einem Klick auf den Pfeil im Widgettitel werden alle Optionen des Widgets angezeigt. Vergiss nicht, nach den Änderungen eines Widgets auf &#8222;Speichern&#8220; zu klicken. Mit einem Klick auf &#8222;Löschen&#8220; wird das Widget und seine Einstellungen entfernt."
 
@@ -1301,11 +1301,11 @@ msgstr "Vom Dialogfenster mit den Detailinformationen aus kannst du auch eine er
 msgid "You can hide/display columns based on your needs and decide how many users to list per screen using the Screen Options tab."
 msgstr "Über &#8222;Ansicht anpassen&#8220; kannst Du Spalten je nach deinen persönlichen Wünschen anzeigen oder verbergen und bestimmen, wie viele Benutzer pro Bildschirm aufgelistet werden sollen."
 
-#: wp-admin/widgets.php:60
+#: wp-admin/widgets.php:62
 msgid "If you want to remove the widget but save its setting for possible future use, just drag it into the Inactive Widgets area. You can add them back anytime from there. This is especially helpful when you switch to a theme with fewer or different widget areas."
 msgstr "Falls du ein Widget nur temporär nicht mehr benutzen möchtest, dann ziehe es in den Bereich <strong>Inaktive Widgets</strong>. Die Einstellungen des Widgets bleiben dann erhalten."
 
-#: wp-admin/widgets.php:69
+#: wp-admin/widgets.php:71
 msgid "When changing themes, there is often some variation in the number and setup of widget areas/sidebars and sometimes these conflicts make the transition a bit less smooth. If you changed themes and seem to be missing widgets, scroll down on this screen to the Inactive Widgets area, where all of your widgets and their settings will have been saved."
 msgstr "Wenn du Themes wechselst, gibt es häufig Unterschiede in der Anzahl und Benennung der Widgetbereiche. Dies kann den Übergang etwas schwierig machen. Wenn du nach einem Themewechsel ein Widget vermisst, dann schaue im Bereich <strong>Inaktive Widgets</strong>, wo alle Widgets und ihre Einstellungen gespeichert sind."
 
@@ -1361,11 +1361,11 @@ msgstr "Administratoren haben vollen Zugriff auf alle administrativen Funktionen
 msgid "Create a brand new user and add them to this site."
 msgstr "Lege einen neuen Benutzer an und füge ihn dieser Website hinzu."
 
-#: wp-admin/update-core.php:258 wp-admin/update-core.php:268
+#: wp-admin/update-core.php:260 wp-admin/update-core.php:270
 msgid "Compatibility with WordPress %1$s: 100%% (according to its author)"
 msgstr "Kompatibilität mit WordPress %1$s: 100%% (laut Autor)"
 
-#: wp-admin/widgets.php:386
+#: wp-admin/widgets.php:388
 msgctxt "removing-widget"
 msgid "Deactivate"
 msgstr "Deaktiviere"
@@ -1829,8 +1829,8 @@ msgid "items"
 msgstr "Einträge"
 
 #: wp-admin/plugins.php:131 wp-admin/update-core.php:244
-#: wp-admin/update-core.php:329 wp-admin/update-core.php:666
-#: wp-admin/update-core.php:670
+#: wp-admin/update-core.php:331 wp-admin/update-core.php:668
+#: wp-admin/update-core.php:672
 msgid "Update Plugins"
 msgstr "Plugins aktualisieren"
 
@@ -2450,7 +2450,7 @@ msgstr "Du kannst eine Sprache auswählen. Die Sprachdateien werden dann automat
 msgid "Mystery Person"
 msgstr "Geheimnisvolle Person"
 
-#: wp-admin/nav-menus.php:684 wp-admin/widgets.php:360
+#: wp-admin/nav-menus.php:684 wp-admin/widgets.php:362
 msgid "Manage in Customizer"
 msgstr "Verwalten mit Live-Vorschau "
 
@@ -4408,7 +4408,7 @@ msgstr[1] "%d Sterne"
 msgid "Invalid translation type."
 msgstr "Ungültige Übersetzungsart."
 
-#: wp-admin/includes/update-core.php:1223 wp-admin/update-core.php:503
+#: wp-admin/includes/update-core.php:1223 wp-admin/update-core.php:505
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Willkommen bei WordPress %1$s. <a href=\"%2$s\">Mehr erfahren</a>."
 
@@ -4916,7 +4916,7 @@ msgstr ""
 "-- Das WordPress-Team\n"
 "https://wordpress.org/\n"
 
-#: wp-admin/includes/update-core.php:1222 wp-admin/update-core.php:502
+#: wp-admin/includes/update-core.php:1222 wp-admin/update-core.php:504
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Willkommen bei WordPress %1$s. Du wirst zur Seite „Über WordPress“ weitergeleitet. Falls nicht, klicke <a href=\"%2$s\">hier</a>."
 
@@ -4990,7 +4990,7 @@ msgstr "Es ist eine neue Version von %1$s verfügbar. <a href=\"%2$s\" class=\"t
 #: wp-admin/includes/theme.php:192 wp-admin/includes/update.php:346
 #: wp-admin/includes/update.php:355 wp-admin/includes/update.php:364
 #: wp-admin/includes/update.php:476 wp-admin/includes/update.php:485
-#: wp-admin/includes/update.php:494 wp-admin/update-core.php:288
+#: wp-admin/includes/update.php:494 wp-admin/update-core.php:290
 msgid "View %1$s version %2$s details"
 msgstr "Zeige Details der Version %2$s von %1$s"
 
@@ -5561,7 +5561,7 @@ msgid "Change"
 msgstr "Wechseln"
 
 #: wp-admin/includes/misc.php:882 wp-admin/includes/post.php:1780
-#: wp-admin/widgets.php:340
+#: wp-admin/widgets.php:342
 msgid "Error while saving."
 msgstr "Fehler beim Speichern."
 
@@ -7030,11 +7030,11 @@ msgstr "Nicht oben halten"
 msgid "Last Modified"
 msgstr "Zuletzt geändert"
 
-#: wp-admin/includes/class-wp-screen.php:920
+#: wp-admin/includes/class-wp-screen.php:921
 msgid "Enable accessibility mode"
 msgstr "Zugänglichkeitsmodus aktivieren"
 
-#: wp-admin/includes/class-wp-screen.php:920
+#: wp-admin/includes/class-wp-screen.php:921
 msgid "Disable accessibility mode"
 msgstr "Zugänglichkeitsmodus deaktivieren"
 
@@ -7252,7 +7252,7 @@ msgstr[0] "Alle <span class=\"count\">(%s)</span>"
 msgstr[1] "Alle <span class=\"count\">(%s)</span>"
 
 #: wp-admin/includes/class-wp-list-table.php:163
-#: wp-admin/includes/class-wp-screen.php:1235
+#: wp-admin/includes/class-wp-screen.php:1236
 msgid "Excerpt View"
 msgstr "Kurzfassung"
 
@@ -7294,7 +7294,7 @@ msgstr[1] "Inaktive <span class=\"count\">(%s)</span>"
 msgid "You do not appear to have any plugins available at this time."
 msgstr "Es sieht nicht so aus, als wären zur Zeit irgendwelche Plugins vorhanden."
 
-#: wp-admin/includes/class-wp-upgrader.php:3032 wp-admin/update-core.php:496
+#: wp-admin/includes/class-wp-upgrader.php:3032 wp-admin/update-core.php:498
 msgid "Installation Failed"
 msgstr "Die Installation ging schief"
 
@@ -7355,7 +7355,7 @@ msgstr "Pings"
 msgid "Filter"
 msgstr "Auswahl einschränken"
 
-#: wp-admin/includes/class-wp-press-this.php:1512
+#: wp-admin/includes/class-wp-press-this.php:1550
 #: wp-admin/includes/meta-boxes.php:261 wp-admin/includes/meta-boxes.php:262
 msgid "Submit for Review"
 msgstr "Zur Revision vorlegen"
@@ -7563,7 +7563,7 @@ msgid "Unapprove this comment"
 msgstr "Kommentar zurückweisen"
 
 #: wp-admin/includes/class-wp-upgrader.php:3034
-#: wp-admin/includes/update-core.php:1219 wp-admin/update-core.php:501
+#: wp-admin/includes/update-core.php:1219 wp-admin/update-core.php:503
 msgid "WordPress updated successfully"
 msgstr "WordPress wurde erfolgreich aktualisiert"
 
@@ -7608,7 +7608,7 @@ msgstr ""
 "Link '%s' wird gelöscht.\n"
 "'Abbrechen' zum Stoppen, 'OK' zum Löschen."
 
-#: wp-admin/includes/class-wp-screen.php:1115 wp-admin/includes/theme.php:234
+#: wp-admin/includes/class-wp-screen.php:1116 wp-admin/includes/theme.php:234
 #: wp-admin/includes/theme.php:295 wp-admin/index.php:61
 msgid "Layout"
 msgstr "Layout"
@@ -7644,7 +7644,7 @@ msgstr "Keine Kommentare warten auf Moderation."
 #: wp-admin/includes/class-wp-users-list-table.php:410
 #: wp-admin/includes/media.php:1491 wp-admin/includes/meta-boxes.php:906
 #: wp-admin/includes/template.php:560 wp-admin/includes/widgets.php:253
-#: wp-admin/themes.php:328 wp-admin/themes.php:458 wp-admin/widgets.php:318
+#: wp-admin/themes.php:328 wp-admin/themes.php:458 wp-admin/widgets.php:320
 msgid "Delete"
 msgstr "Löschen"
 
@@ -7699,7 +7699,7 @@ msgstr "Kommentar auswählen"
 #: wp-admin/includes/class-wp-posts-list-table.php:801
 #: wp-admin/includes/class-wp-terms-list-table.php:338
 #: wp-admin/includes/class-wp-users-list-table.php:430
-#: wp-admin/update-core.php:300 wp-admin/update-core.php:371
+#: wp-admin/update-core.php:302 wp-admin/update-core.php:373
 msgid "Select %s"
 msgstr "%s auswählen"
 
@@ -7814,8 +7814,8 @@ msgstr "WordPress %s"
 msgid "Some of your translations need updating. Sit tight for a few more seconds while we update them as well."
 msgstr "Einige deiner Übersetzungen müssen aktualisiert werden. Warte noch ein paar Sekunden ab, während wir die ebenfalls aktualisieren."
 
-#: wp-admin/includes/class-wp-press-this.php:908
-#: wp-admin/includes/class-wp-press-this.php:957
+#: wp-admin/includes/class-wp-press-this.php:932
+#: wp-admin/includes/class-wp-press-this.php:981
 #: wp-admin/includes/meta-boxes.php:434 wp-admin/includes/meta-boxes.php:969
 msgid "Add"
 msgstr "Hinzufügen"
@@ -7825,7 +7825,7 @@ msgid "Downloading translation from <span class=\"code\">%s</span>&#8230;"
 msgstr "Lädt Übersetzung von <span class=\"code\">%s</span>&#8230; herunter"
 
 #: wp-admin/includes/class-wp-upgrader-skins.php:791
-#: wp-admin/update-core.php:424 wp-admin/update-core.php:717
+#: wp-admin/update-core.php:426 wp-admin/update-core.php:719
 msgid "Update Translations"
 msgstr "Aktualisiere Übersetzungen"
 
@@ -7965,8 +7965,8 @@ msgstr "Art"
 
 #: wp-admin/includes/class-wp-list-table.php:1069
 #: wp-admin/includes/nav-menu.php:553 wp-admin/includes/nav-menu.php:744
-#: wp-admin/update-core.php:249 wp-admin/update-core.php:325
-#: wp-admin/update-core.php:357 wp-admin/update-core.php:396
+#: wp-admin/update-core.php:249 wp-admin/update-core.php:327
+#: wp-admin/update-core.php:359 wp-admin/update-core.php:398
 msgid "Select All"
 msgstr "Alle auswählen"
 
@@ -8072,7 +8072,7 @@ msgstr "Lösche %s"
 msgid "Activate %s"
 msgstr "Aktiviere %s"
 
-#: wp-admin/includes/class-wp-press-this.php:222
+#: wp-admin/includes/class-wp-press-this.php:240
 msgid "This category already exists."
 msgstr "Diese Kategorie existiert bereits."
 
@@ -8118,7 +8118,7 @@ msgstr "Keine genehmigten Kommentare"
 msgid "First page"
 msgstr "Erste Seite"
 
-#: wp-admin/includes/class-wp-press-this.php:1516
+#: wp-admin/includes/class-wp-press-this.php:1554
 msgid "More actions"
 msgstr "Weitere Aktionen"
 
@@ -8164,24 +8164,24 @@ msgstr ""
 "\n"
 "Danke! -- Das WordPress-Team"
 
-#: wp-admin/includes/class-wp-press-this.php:854
+#: wp-admin/includes/class-wp-press-this.php:872
 #: wp-admin/includes/meta-boxes.php:376 wp-admin/includes/theme.php:261
 msgid "Post Formats"
 msgstr "Beitragsformate"
 
-#: wp-admin/includes/class-wp-press-this.php:1369
+#: wp-admin/includes/class-wp-press-this.php:1399
 msgid "Scan site for content"
 msgstr "Website nach Inhalten scannen"
 
-#: wp-admin/includes/class-wp-press-this.php:890
+#: wp-admin/includes/class-wp-press-this.php:914
 msgid "Toggle add category"
 msgstr "Kategorie hinzufügen aktivieren/deaktivieren"
 
-#: wp-admin/includes/class-wp-press-this.php:1370
+#: wp-admin/includes/class-wp-press-this.php:1400
 msgid "Enter a URL to scan"
 msgstr "Gebe eine URL zum Scannen ein"
 
-#: wp-admin/includes/class-wp-press-this.php:1371
+#: wp-admin/includes/class-wp-press-this.php:1401
 msgid "Scan"
 msgstr "Scannen"
 
@@ -8193,7 +8193,7 @@ msgstr ""
 "AKTUALISIERUNGS-PROTOKOLL\n"
 "=========================="
 
-#: wp-admin/includes/class-wp-press-this.php:1521
+#: wp-admin/includes/class-wp-press-this.php:1559
 msgid "Standard Editor"
 msgstr "Standard-Editor"
 
@@ -8211,7 +8211,7 @@ msgctxt "Active plugin installs"
 msgid "1+ Million"
 msgstr "über 1 Million"
 
-#: wp-admin/includes/class-wp-press-this.php:1363
+#: wp-admin/includes/class-wp-press-this.php:1393
 msgid "Hide post options"
 msgstr "Beitragsoptionen verbergen"
 
@@ -8219,11 +8219,11 @@ msgstr "Beitragsoptionen verbergen"
 msgid "Y/m/d g:i:s a"
 msgstr "d.m.Y G:i:s"
 
-#: wp-admin/includes/class-wp-press-this.php:1411
+#: wp-admin/includes/class-wp-press-this.php:1441
 msgid "Suggested media"
 msgstr "Vorgeschlagene Medien"
 
-#: wp-admin/includes/class-wp-screen.php:1141
+#: wp-admin/includes/class-wp-screen.php:1142
 msgid "Number of items per page:"
 msgstr "Einträge pro Seite:"
 
@@ -8231,47 +8231,47 @@ msgstr "Einträge pro Seite:"
 msgid "Missing post ID."
 msgstr "Fehlende Beitrags-ID."
 
-#: wp-admin/includes/class-wp-press-this.php:1474
-#: wp-admin/includes/class-wp-press-this.php:1484
-#: wp-admin/includes/class-wp-press-this.php:1493
+#: wp-admin/includes/class-wp-press-this.php:1508
+#: wp-admin/includes/class-wp-press-this.php:1519
+#: wp-admin/includes/class-wp-press-this.php:1530
 msgid "Back to post options"
 msgstr "Zurück zu Beitragsoptionen"
 
-#: wp-admin/includes/class-wp-press-this.php:1406
-#: wp-admin/includes/class-wp-press-this.php:1407
+#: wp-admin/includes/class-wp-press-this.php:1436
+#: wp-admin/includes/class-wp-press-this.php:1437
 msgid "Post title"
 msgstr "Beitragstitel"
 
-#: wp-admin/includes/class-wp-press-this.php:1397
+#: wp-admin/includes/class-wp-press-this.php:1427
 msgid "You should upgrade <a href=\"%s\" target=\"_blank\">your bookmarklet</a> to the latest version!"
 msgstr "Du solltest <a href=\"%s\" target=\"_blank\">dein Bookmarklet</a> auf die neueste Version aktualisieren."
 
-#: wp-admin/includes/class-wp-press-this.php:917
+#: wp-admin/includes/class-wp-press-this.php:941
 msgid "Search categories"
 msgstr "Suche Kategorien"
 
-#: wp-admin/includes/class-wp-press-this.php:915
+#: wp-admin/includes/class-wp-press-this.php:939
 msgid "Search categories by name"
 msgstr "Suche Kategorien nach Name"
 
-#: wp-admin/includes/class-wp-press-this.php:1274
+#: wp-admin/includes/class-wp-press-this.php:1298
 msgid "Press This!"
 msgstr "Press This!"
 
-#: wp-admin/includes/class-wp-press-this.php:1361
+#: wp-admin/includes/class-wp-press-this.php:1391
 msgid "Show post options"
 msgstr "Zeige Beitragsoptionen"
 
-#: wp-admin/includes/class-wp-press-this.php:1169
+#: wp-admin/includes/class-wp-press-this.php:1193
 msgctxt "Used in Press This to indicate where the content comes from."
 msgid "Source:"
 msgstr "Quelle:"
 
-#: wp-admin/includes/class-wp-press-this.php:247
+#: wp-admin/includes/class-wp-press-this.php:265
 msgid "Error while adding the category. Please try again later."
 msgstr "Fehler beim Hinzufügen der Kategorie. Bitte versuche es später noch einmal."
 
-#: wp-admin/includes/class-wp-press-this.php:240
+#: wp-admin/includes/class-wp-press-this.php:258
 msgid "This category cannot be added. Please change the name and try again."
 msgstr "Diese Kategorie kann nicht hinzugefügt werden. Bitte ändere den Namen und versuche es noch einmal."
 
@@ -8370,7 +8370,7 @@ msgid_plural "Recently Active <span class=\"count\">(%s)</span>"
 msgstr[0] "Kürzlich aktiv <span class=\"count\">(%s)</span>"
 msgstr[1] "Kürzlich aktiv <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-screen.php:1048
+#: wp-admin/includes/class-wp-screen.php:1049
 msgctxt "Welcome panel"
 msgid "Welcome"
 msgstr "Willkommen"
@@ -8382,7 +8382,7 @@ msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] "Alle <span class=\"count\">(%s)</span>"
 msgstr[1] "Alle <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-screen.php:925
+#: wp-admin/includes/class-wp-screen.php:926
 msgid "Enable full-height editor and distraction-free functionality."
 msgstr "Anzeige des Editors in voller Höhe zulassen und ablenkungsfreies Schreiben aktivieren."
 
@@ -8527,21 +8527,21 @@ msgstr "Benötigt %1$s in Datei %2$s."
 msgid "Items list"
 msgstr "Elementliste"
 
-#: wp-admin/includes/class-wp-screen.php:923
+#: wp-admin/includes/class-wp-screen.php:924
 msgid "Additional settings"
 msgstr "Zusätzliche Einstellungen"
 
-#: wp-admin/includes/class-wp-screen.php:1121
+#: wp-admin/includes/class-wp-screen.php:1122
 msgid "%s column"
 msgid_plural "%s columns"
 msgstr[0] "%s Spalte"
 msgstr[1] "%s Spalten"
 
-#: wp-admin/includes/class-wp-screen.php:1181
+#: wp-admin/includes/class-wp-screen.php:1182
 msgid "Pagination"
 msgstr "Seitennummerierung"
 
-#: wp-admin/includes/class-wp-screen.php:1228
+#: wp-admin/includes/class-wp-screen.php:1229
 msgid "View Mode"
 msgstr "Ansichtsmodus"
 
@@ -8601,7 +8601,7 @@ msgstr "Du darfst diesen Beitrag nicht bearbeiten."
 msgid "Items list navigation"
 msgstr "Navigation der Elementliste"
 
-#: wp-admin/includes/class-wp-press-this.php:1513
+#: wp-admin/includes/class-wp-press-this.php:1551
 msgid "Saving&hellip;"
 msgstr "Speichere&#160;&hellip;"
 
@@ -8646,7 +8646,7 @@ msgstr "Eingereicht am"
 msgid "Filter items list"
 msgstr "Liste mit Filtern"
 
-#: wp-admin/includes/class-wp-screen.php:1032
+#: wp-admin/includes/class-wp-screen.php:1033
 msgid "Boxes"
 msgstr "Boxen"
 
@@ -8671,7 +8671,7 @@ msgstr "Kann nicht mit SSH2-Server %s verbinden"
 msgid "Screen Options"
 msgstr "Ansicht anpassen"
 
-#: wp-admin/includes/class-wp-screen.php:980
+#: wp-admin/includes/class-wp-screen.php:981
 msgid "Screen Options Tab"
 msgstr "Tab &#8222;Ansicht anpassen&#8220;"
 
@@ -8691,7 +8691,7 @@ msgstr "Wir haben es versucht, konnten deine Website aber nicht automatisch aktu
 msgid "Your site at %1$s experienced a critical failure while trying to update to the latest version of WordPress, %2$s."
 msgstr "Auf deiner Website %1$s ist es bei der Aktualisierung von WordPress auf Version %2$s zu einem kritischen Fehler gekommen."
 
-#: wp-admin/includes/class-wp-upgrader.php:3387 wp-admin/update-core.php:553
+#: wp-admin/includes/class-wp-upgrader.php:3387 wp-admin/update-core.php:555
 msgid "Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers."
 msgstr "Für die Sicherheit deiner Website ist es wichtig, dass du sie aktuell hältst. Damit machst du auch das Internet für dich und deine Besucher sicherer.  "
 
@@ -8760,7 +8760,7 @@ msgid "Search for plugins in the WordPress Plugin Directory."
 msgstr "Suche im WordPress Plugin-Verzeichnis nach Plugins."
 
 #: wp-admin/includes/class-wp-upgrader-skins.php:228
-#: wp-admin/update-core.php:671 wp-admin/update-core.php:700
+#: wp-admin/update-core.php:673 wp-admin/update-core.php:702
 msgid "Update progress"
 msgstr "Aktualisierungsvorgang"
 
@@ -9002,7 +9002,7 @@ msgstr "Export-Datei herunterladen"
 msgid "No importers are available."
 msgstr "Kein passendes Importskript vorhanden."
 
-#: wp-admin/custom-background.php:296 wp-admin/widgets.php:282
+#: wp-admin/custom-background.php:296 wp-admin/widgets.php:284
 msgid "Position"
 msgstr "Position"
 
@@ -9370,11 +9370,11 @@ msgstr "Link hinzufügen"
 msgid "Adding Categories"
 msgstr "Kategorien hinzufügen"
 
-#: wp-admin/about.php:193
+#: wp-admin/about.php:199
 msgid "Return to Updates"
 msgstr "Zurück zu Aktualisierungen"
 
-#: wp-admin/about.php:208
+#: wp-admin/about.php:214
 msgid "Maintenance Release"
 msgstr "Wartungs-Update"
 
@@ -9386,17 +9386,18 @@ msgstr "Schlagwörter hinzufügen"
 msgid "What&#8217;s New"
 msgstr "Was gibt's Neues"
 
-#: wp-admin/about.php:211
+#: wp-admin/about.php:217
 msgid "Security Release"
 msgstr "Sicherheitsupdate"
 
-#: wp-admin/about.php:214
+#: wp-admin/about.php:220
 msgid "Maintenance and Security Release"
 msgstr "Wartungs- und Sicherheitsupdate"
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:44 wp-admin/about.php:48 wp-admin/about.php:51
-#: wp-admin/about.php:55 wp-admin/about.php:235
+#: wp-admin/about.php:44 wp-admin/about.php:47 wp-admin/about.php:50
+#: wp-admin/about.php:54 wp-admin/about.php:57 wp-admin/about.php:61
+#: wp-admin/about.php:241
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Weitere Informationen findest du in den <a href=\"%s\">Veröffentlichtungsmitteilungen</a>."
 
@@ -9447,9 +9448,9 @@ msgstr "Nutze Tastaturkürzel, um Kommentare schneller zu moderieren. Die entspr
 #: wp-admin/plugin-install.php:71 wp-admin/plugins.php:371
 #: wp-admin/revision.php:114 wp-admin/theme-editor.php:25
 #: wp-admin/theme-install.php:91 wp-admin/themes.php:82
-#: wp-admin/update-core.php:557 wp-admin/upload.php:48 wp-admin/upload.php:186
+#: wp-admin/update-core.php:559 wp-admin/upload.php:48 wp-admin/upload.php:186
 #: wp-admin/user-edit.php:48 wp-admin/user-new.php:186 wp-admin/users.php:31
-#: wp-admin/widgets.php:51
+#: wp-admin/widgets.php:53
 msgid "Overview"
 msgstr "Übersicht"
 
@@ -9465,7 +9466,7 @@ msgstr "Entwickler"
 msgid "Welcome to WordPress %s"
 msgstr "Willkommen bei WordPress %s"
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:128
 msgid "Under the Hood"
 msgstr "Unter der Haube"
 
@@ -9551,9 +9552,9 @@ msgstr "Attribute"
 #: wp-admin/plugin-editor.php:142 wp-admin/plugin-install.php:86
 #: wp-admin/plugins.php:395 wp-admin/revision.php:118
 #: wp-admin/theme-editor.php:38 wp-admin/theme-install.php:106
-#: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:575
+#: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:577
 #: wp-admin/upload.php:65 wp-admin/upload.php:206 wp-admin/user-edit.php:53
-#: wp-admin/user-new.php:204 wp-admin/users.php:66 wp-admin/widgets.php:73
+#: wp-admin/user-new.php:204 wp-admin/users.php:66 wp-admin/widgets.php:75
 msgid "For more information:"
 msgstr "Für mehr Information:"
 
@@ -10072,9 +10073,9 @@ msgstr "Hinweis:"
 #: wp-admin/plugin-editor.php:145 wp-admin/plugin-install.php:88
 #: wp-admin/plugins.php:397 wp-admin/revision.php:120
 #: wp-admin/theme-editor.php:43 wp-admin/theme-install.php:108
-#: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:577
+#: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:579
 #: wp-admin/upload.php:67 wp-admin/upload.php:208 wp-admin/user-edit.php:55
-#: wp-admin/user-new.php:206 wp-admin/users.php:69 wp-admin/widgets.php:75
+#: wp-admin/user-new.php:206 wp-admin/users.php:69 wp-admin/widgets.php:77
 msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"https://de.wordpress.org/hilfe/\" target=\"_blank\">Support</a>"
 
@@ -10158,7 +10159,7 @@ msgstr "Du hast nicht die erforderlichen Rechte, um Inhalte in diese Website zu 
 msgid "You do not have sufficient permissions to export the content of this site."
 msgstr "Du hast nicht die erforderlichen Rechte, um den Inhalt dieser Website zu exportieren."
 
-#: wp-admin/about.php:196
+#: wp-admin/about.php:202
 msgid "Go to Dashboard"
 msgstr "Zum Dashboard"
 
@@ -10166,15 +10167,15 @@ msgstr "Zum Dashboard"
 msgid "Permanently Delete Comment"
 msgstr "Kommentar unwiderruflich löschen"
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:81
 msgid "Formatting Shortcuts"
 msgstr "Formatierungs-Kürzel"
 
-#: wp-admin/about.php:196
+#: wp-admin/about.php:202
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Zum Dashboard &rarr; Home"
 
-#: wp-admin/about.php:193
+#: wp-admin/about.php:199
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Zum Dashboard  &rarr; Aktualisierungen zurückkehren"
 
@@ -10373,15 +10374,15 @@ msgstr "Du darfst dieses Element nicht hinzufügen."
 msgid "Comments list navigation"
 msgstr "Navigation der Kommentarliste"
 
-#: wp-admin/about.php:212
+#: wp-admin/about.php:218
 msgid "Security Releases"
 msgstr "Sicherheitsversionen"
 
-#: wp-admin/about.php:42 wp-admin/about.php:215
+#: wp-admin/about.php:42 wp-admin/about.php:221
 msgid "Maintenance and Security Releases"
 msgstr "Wartungs- und Sicherheitsversionen"
 
-#: wp-admin/about.php:209
+#: wp-admin/about.php:215
 msgid "Maintenance Releases"
 msgstr "Wartungsversionen"
 
@@ -10595,49 +10596,49 @@ msgstr "Eine Seite zu erstellen, ist sehr ähnlich wie das Erstellen eines Beitr
 msgid "Images of exactly <strong>%1$d &times; %2$d pixels</strong> will be used as-is."
 msgstr "Bilder von genau <strong>%1$d &times; %2$d Pixel</strong> werden benutzt, wie sie sind."
 
-#: wp-admin/about.php:152
+#: wp-admin/about.php:158
 msgid "Smart Image Resizing"
 msgstr "Intelligente Größenänderung von Bildern"
 
-#: wp-admin/about.php:169
+#: wp-admin/about.php:175
 msgid "Script Loader Improvements"
 msgstr "Verbesserungen am Script Loader"
 
-#: wp-admin/about.php:103
+#: wp-admin/about.php:109
 msgid "Custom Logos"
 msgstr "Eigene Logos"
 
-#: wp-admin/about.php:179
+#: wp-admin/about.php:185
 msgid "Better Embed Templates"
 msgstr "Bessere Embed-Templates"
 
-#: wp-admin/about.php:163
+#: wp-admin/about.php:169
 msgid "jQuery 1.12.3, jQuery Migrate 1.4.0, Backbone 1.2.3, and Underscore 1.8.3 are bundled."
 msgstr "jQuery 1.12.3, jQuery Migrate 1.4.0, Backbone 1.2.3, und Underscore 1.8.3 werden mitgeliefert."
 
 #. translators: %s: URL to the development post of the new feature
-#: wp-admin/about.php:130
+#: wp-admin/about.php:136
 msgid "The customizer now supports a <a href=\"%s\">comprehensive framework</a> for rendering parts of the preview without rewriting your PHP code in JavaScript."
 msgstr "Der Customizer unterstützt nun ein <a href=\"%s\">umfassendes Framework</a>, um Teile der Vorschau zu rendern, ohne deinen PHP-Code in JavaScript umzuschreiben."
 
-#: wp-admin/about.php:83
+#: wp-admin/about.php:89
 msgid "Customization Improvements"
 msgstr "Verbesserungen am Customizer"
 
-#: wp-admin/about.php:67
+#: wp-admin/about.php:73
 msgid "Editing Improvements"
 msgstr "Verbesserungen am Editor"
 
 #. translators: %s: URL to the development post of the new feature
-#: wp-admin/about.php:183
+#: wp-admin/about.php:189
 msgid "Embed templates have been split into parts and can be <a href=\"%s\">directly overridden by themes</a> via the template hierarchy."
 msgstr "Embed-Templates wurden in Teilstücke aufgeteilt und können über die Template-Hierarchie <a href=\"%s\">direkt durch Themes überschrieben</a> werden."
 
-#: wp-admin/about.php:70
+#: wp-admin/about.php:76
 msgid "Inline Linking"
 msgstr "&#8222;Inline&#8220;-Verlinkung"
 
-#: wp-admin/about.php:86
+#: wp-admin/about.php:92
 msgid "Live Responsive Previews"
 msgstr "Direkte Vorschau des &#8222;Responsive&#8220;-Verhaltens"
 
@@ -10646,17 +10647,17 @@ msgid "Thank you for updating! WordPress %s streamlines your workflow, whether y
 msgstr "Danke fürs Aktualisieren! WordPress %s optimiert deinen Arbeitsablauf, ganz gleich ob du an deiner Website schreibst oder entwickelst."
 
 #. translators: %s: URL to Menus section of the customizer
-#: wp-admin/about.php:137
+#: wp-admin/about.php:143
 msgid "See it in action with <a href=\"%s\" class=\"load-customize\">Menus</a>."
 msgstr "Sieh's dir in Aktion bei <a href=\"%1$s\" class=\"load-customize\">Menüs</a> an."
 
 #. translators: 1: URL to Menus section of the customizer, 2: URL to Widgets
 #. section of the customizer
-#: wp-admin/about.php:143
+#: wp-admin/about.php:149
 msgid "See it in action with <a href=\"%1$s\" class=\"load-customize\">Menus</a> or <a href=\"%2$s\" class=\"load-customize\">Widgets</a>."
 msgstr "Sieh's dir in Aktion bei <a href=\"%1$s\" class=\"load-customize\">Menüs</a> oder <a href=\"%2$s\" class=\"load-customize\">Widgets</a> an."
 
-#: wp-admin/about.php:76
+#: wp-admin/about.php:82
 msgid "Do you enjoy using formatting shortcuts for lists and headings? Now they&#8217;re even more useful, with horizontal lines and <code>&lt;code&gt;</code>."
 msgstr "Verwendest du gerne Shortcuts zur Formatierung von Listen und Überschriften? Diese sind jetzt noch nützlicher, mit horizontalen Linien und <code>&lt;code&gt;</code>. "
 
@@ -10668,47 +10669,47 @@ msgstr "Release-Leitung Design"
 msgid "Release Deputy"
 msgstr "Stellvertretende Release-Leitung"
 
-#: wp-admin/about.php:87
+#: wp-admin/about.php:93
 msgid "Make sure your site looks great on all screens!"
 msgstr "Sorge dafür, dass deine Website auf allen Bildschirmen toll aussieht."
 
 #. translators: %s: wp_add_inline_script()
-#: wp-admin/about.php:173
+#: wp-admin/about.php:179
 msgid "Better support has been added for script header/footer dependencies. New %s enables adding extra code to registered scripts."
 msgstr "Eine bessere Unterstützung von Script-Abhängigkeiten im Header/Footer wurde hinzugefügt. Das neue %s ermöglicht, registrierten Scripts zusätzlichen Code hinzuzufügen."
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:110
 msgid "Themes can now support logos for your business or brand."
 msgstr "Themes können nun auch Logos für dein Unternehmen oder deine Marke unterstützen."
 
-#: wp-admin/about.php:162
+#: wp-admin/about.php:168
 msgid "JavaScript Library Updates"
 msgstr "Aktualisierung der JavaScript-Bibliotheken"
 
 #. translators: %s: URL to Site Identity section of the customizer
-#: wp-admin/about.php:109
+#: wp-admin/about.php:115
 msgid "Your theme supports custom logos! Try it out right now in the <a href=\"%s\" class=\"load-customize\">Site Identity</a> section of the customizer."
 msgstr "Dein Theme unterstützt individuelle Logos! Probier es gleich im Customizer unter <a href=\"%s\" class=\"load-customize\">Website-Informationen</a> aus."
 
-#: wp-admin/about.php:97
+#: wp-admin/about.php:103
 msgid "Preview mobile, tablet, and desktop views directly in the customizer."
 msgstr "Sieh dir direkt im Customizer eine Vorschau der Ansicht auf Smartphones, Tablets und Desktopgeräten an."
 
 #. translators: %s: URL to customizer
-#: wp-admin/about.php:93
+#: wp-admin/about.php:99
 msgid "Preview mobile, tablet, and desktop views directly in the <a href=\"%s\" class=\"load-customize\">customizer</a>."
 msgstr "Sieh dir direkt im <a href=\"%s\" class=\"load-customize\">Customizer</a> eine Vorschau der Ansicht auf Smartphones, Tablets und Desktopgeräten an."
 
-#: wp-admin/about.php:71
+#: wp-admin/about.php:77
 msgid "Stay focused on your writing with a less distracting interface that keeps you in place and allows you to easily link to your content."
 msgstr "Konzentriere dich auf das Schreiben durch eine weniger ablenkende Oberfläche, die dich an Ort und Stelle unterstützt und es dir erlaubt, deine Inhalte ganz einfach zu verlinken."
 
 #. translators: %s: URL to the development post of the new feature
-#: wp-admin/about.php:156
+#: wp-admin/about.php:162
 msgid "Generated images now load up to 50&#37; faster with no noticeable quality loss. <a href=\"%s\">It&#8217;s really cool</a>."
 msgstr "Erzeugte Bilder werden nun bis zu 50&#37; schneller geladen, ohne merkbaren Qualitätsverlust. <a href=\"%s\">Das ist wirklich toll</a>."
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:132
 msgid "Selective Refresh"
 msgstr "Selektive Aktualisierung der Ansicht"
 
@@ -10797,13 +10798,13 @@ msgid "Discussion Settings"
 msgstr "Einstellungen &rsaquo; Diskussion"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:218
+#: wp-admin/about.php:224
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Version %s</strong> behob eine Sicherheitslücke."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:227
+#: wp-admin/about.php:233
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> behob eine Sicherheitslücke und %2$s Fehler."
@@ -10811,24 +10812,25 @@ msgstr[1] "<strong>Version %1$s</strong> behob eine Sicherheitslücke und %2$s F
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:46 wp-admin/about.php:231
+#: wp-admin/about.php:52 wp-admin/about.php:237
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> behob Sicherheitslücken und %2$s Fehler."
 msgstr[1] "<strong>Version %1$s</strong> behob Sicherheitslücken und %2$s Fehler."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:53 wp-admin/about.php:223
+#: wp-admin/about.php:59 wp-admin/about.php:229
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> behob %2$s Fehler."
 msgstr[1] "<strong>Version %1$s</strong> behob %2$s Fehler."
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:43 wp-admin/about.php:50 wp-admin/about.php:220
+#: wp-admin/about.php:43 wp-admin/about.php:46 wp-admin/about.php:49
+#: wp-admin/about.php:56 wp-admin/about.php:226
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Version %s</strong> behob einige Sicherheitslücken."
 
-#: wp-admin/about.php:113
+#: wp-admin/about.php:119
 msgid "The Twenty Fifteen and Twenty Sixteen themes have been updated to support custom logos, which can be found in the Site Identity section of the customizer."
 msgstr "Das Twenty Fifteen und Twenty Sixteen Theme wurden aktualisiert. Beide unterstützen nun die Integration eines individuellen Logos, das du unter den Website-Informationen im Customizer einfügen kannst."
