@@ -109,7 +109,7 @@ if (!defined('WP_CONTENT_URL')) {
  * in their development environments.
  */
 if (!defined('WP_DEBUG')) {
-	define('WP_DEBUG', false);
+	define('WP_DEBUG', true);
 }
 
 /* That's all, stop editing! Happy blogging. */

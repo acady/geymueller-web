@@ -45,7 +45,6 @@ if( ! class_exists( 'HooCore_Plugin' ) ) {
 		 * @since     1.0.0
 		 */
 		private function __construct() {
-		    define('SINGLEPAGE_LIB_HOO_URI', 'lib/hoo-core');
 			define('HOO_TINYMCE_URI', SINGLEPAGE_LIB_HOO_URI . 'tinymce');
 			define('HOO_TINYMCE_DIR', SINGLEPAGE_LIB_HOO_DIR .'tinymce');
 
