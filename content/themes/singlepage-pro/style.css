@@ -2,7 +2,7 @@
 Theme Name: SinglePage Pro
 Theme URI: http://www.hoothemes.com/themes/single-page.html
 Description: SinglePage is a one page responsive WordPress theme built using the Twitter Bootstrap framework. Users have the flexibility to create the website that suits your style, with extensive theme options. Choose from four predefined sections and build the homepage that best suits your company, you can sort the section order by simply drag & drop with the fantastic control panel. Each of the homepage sections can have a parallax background image and its own set of colors. Dozens of theme options are available to design your sites, such as typography, social icons, upload logo, custom css, HTML5 video background, full screen google map and so on. You can not only use it to create a singlepage-style front page for your business website, but also create your personal blog or site easily.
-Version: 2.6.5
+Version: 2.6.7
 Author: HooThemes
 Author URI: http://www.hoothemes.com
 License: GNU General Public License
@@ -80,13 +80,13 @@ div.mc-image {
 	z-index:999;
 }
 /*I want to avoid jumpiness as the JS loads,so I initially hide my cycle*/
-			.singlepage_slider {
+.singlepage_slider {
 	display:none;
 	/* Only use this if you fade it in again after the images load */
 				position:static !important;
 }
 /*Set my gradient above all images*/
-			#gradient {
+#gradient {
 	left:0;
 	height:100%;
 	position:absolute;
@@ -97,7 +97,7 @@ div.mc-image {
 /*Set my logo in bottom left*/
 	
 			
-			.singlepage_slider_arrow_left,.singlepage_slider_arrow_right {
+.singlepage_slider_arrow_left,.singlepage_slider_arrow_right {
 	bottom:30px;
 	height:67px;
 	position:absolute;
@@ -638,9 +638,7 @@ a:hover {
 	overflow:hidden;
 	text-overflow:ellipsis
 }
-html,body {
-	/*height:100%*/
-}
+
 .left {
 	float:left;
 }
