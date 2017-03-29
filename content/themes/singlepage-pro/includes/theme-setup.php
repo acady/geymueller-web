@@ -44,7 +44,12 @@ add_action( 'after_setup_theme', 'singlepage_setup' );
 	$youtube_video_background_section = of_get_option( 'youtube_video_background_section' ,'0' );
 	$youtube_video                    = of_get_option( 'youtube_video' ,'' );
 	$api_key                          = of_get_option( 'gmap_api_key' ,'' );
-	
+
+	// use jQuery 2.1.1 instead of the version provided with WordPress. jquery.easing needs this to work
+  wp_deregister_script('jquery');
+  wp_register_script('jquery', get_template_directory_uri().'/js/vendor/jquery/dist/jquery.js', false, '2.1.1');
+  wp_enqueue_script('jquery');
+
 	if( $youtube_video_background_section > 0 && $youtube_video != '' && (is_home() || is_front_page() ) ):
 	wp_enqueue_style('jquery.mb.YTPlayer',  get_template_directory_uri() .'/js/YTPlayer/css/jquery.mb.YTPlayer.min.css', false, '4.0.3', false);
 	wp_enqueue_script( 'jquery.mb.YTPlayer', get_template_directory_uri().'/js/YTPlayer/jquery.mb.YTPlayer.js', array( 'jquery' ), '', false );
@@ -73,7 +78,8 @@ add_action( 'after_setup_theme', 'singlepage_setup' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri().'/js/bootstrap.min.js', array( 'jquery' ), '3.0.3', false );
 	wp_enqueue_script( 'respond', get_template_directory_uri().'/js/respond.min.js', array( 'jquery' ), '1.4.2', false );
 	wp_enqueue_script( 'modernizr.custom', get_template_directory_uri().'/js/modernizr.custom.js', array( 'jquery' ), '2.8.2', false );
-	wp_enqueue_script( 'jquery.easing', get_template_directory_uri().'/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3 ', false );
+  // load easing at document.ready() in template-home.php instead (see https://stackoverflow.com/questions/11533168)
+	//wp_enqueue_script( 'jquery.easing', get_template_directory_uri().'/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3 ', false );
 	//wp_enqueue_script( 'singlepage-cycle', get_template_directory_uri().'/js/jquery.cycle.all.js', array( 'jquery' ), '1.3.2', false );
 	
 	

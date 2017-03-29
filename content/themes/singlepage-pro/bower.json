@@ -2,7 +2,7 @@
   "name": "geymueller-template",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "~2.2.1",
+    "jquery": "2.1.1",
     "requirejs": "~2.1.22",
     "bootstrap-sass": "~3.3.6",
     "angular-bootstrap": "2.1.3",

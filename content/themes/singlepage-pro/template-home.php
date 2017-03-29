@@ -360,7 +360,6 @@
 
 
 $output .= '<script>jQuery(document).ready(function($) {
-									
 				$("#'.$slider_id.'").maximage({
 					cycleOptions: {
 						fx: "fade",
@@ -507,6 +506,12 @@ $output .= '<script>jQuery(document).ready(function($) {
  ?>
 <div class="content"> <?php echo $output;?>
   <div class="clear"></div>
+  <script>
+    jQuery(document).ready(function($) {
+      // load here instead of wp_enqueue (via https://stackoverflow.com/questions/11533168)
+      $.getScript("<?=get_template_directory_uri()?>/js/jquery.easing.1.3.js");
+    });
+  </script>
 </div>
 <?php 
     $youtube_video_background_section = of_get_option( 'youtube_video_background_section' ,'0' );
