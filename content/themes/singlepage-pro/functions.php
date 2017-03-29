@@ -21,6 +21,51 @@ function theme_enqueue_scripts(){
     wp_enqueue_style('global', get_bloginfo('template_url') . '/css/global.css');
 }
 
+
+/*
+ * check if a string contains a word (via http://stackoverflow.com/a/25633879/2621981)
+ */
+function containsWord($str, $word)
+{
+  return !!preg_match('#\\b' . preg_quote($word, '#') . '\\b#i', $str);
+}
+
+/*
+ * add text highlighting (tooltips) for geymueller
+ */
+function add_geymueller_highlights($content) {
+  // get all highlights from ACF
+  $fields = get_field('highlights');
+  if (empty($fields)) {
+    return $content;
+  }
+
+   foreach($fields as $field) {
+    $info = $field["description"];
+    if (!empty($field['image'])) {
+      $info .= "<img src=".$field['image'].">";
+    }
+
+    $highlight =
+     '<span ' .
+        ' class="highlight"'.
+        ' data-toggle="popover"'.
+        ' data-html="true"'.
+        ' data-content="'.$info.'"'.
+        ' data-trigger="hover"'.
+      ' >'.
+        $field["keyword"].
+    '</span>';
+    $content = str_replace($field["keyword"], $highlight, $content);
+  }
+
+  $content .=  '<script type="text/javascript">'.
+    '$(document).ready(function () { $(\'[data-toggle="popover"]\').popover(); });'.
+    '</script>';
+
+  return $content;
+}
+
 /**
  * Load options framework
  **/

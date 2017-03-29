@@ -427,8 +427,8 @@ $output .= '<script>jQuery(document).ready(function($) {
 			
 	   $output .= ' <div class="container">
 		<div class="section-inner">
-			<div class="section-content" style="'.str_replace('"','\'',$content_style).'">'.do_shortcode( $content ).'</div>';
-		
+			<div class="section-content" style="'.str_replace('"','\'',$content_style).'">'.add_geymueller_highlights(do_shortcode( $content )).'</div>';
+
 		if( $image!='' ){
 			if( $image_link !='' ){
 				$output .= '<a href="'.esc_url($image_link).'" style=" display:black;" target="'.esc_attr($image_link_target).'"><div class="section-image" style="background-image:url('.esc_url($image).')"></div></a>';
