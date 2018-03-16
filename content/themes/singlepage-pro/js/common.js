@@ -88,51 +88,53 @@
 		
     },
     t = function() {
-        var e = $("nav > ul");
-      if( e.length ){
-		e.find(" > li.current-menu-item, > li.current-menu-parent").addClass("cur");
-        var n = $("nav > ul > li.cur").not(".nav_default");
-		if( !n.length){
-			var n = $("nav > ul > li.nav_default");
-			$("nav > ul > li.nav_focus").hide();
-			}
-		var t = $("nav > ul > li").not(".nav_focus"),
-        r = e.find(".nav_focus"),
-        i = n.outerWidth(),
-        s = n.position().left + 6,
-        o = n.index();
-        r.stop(!0, !1).animate({
-            left: s,
-            width: i
-        },
-        300),
-        t.eq(o).addClass("cur").end().on("mouseenter",
-        function(e) {
-			jQuery("nav > ul > li.nav_focus").show();
-            var t = $(this),
-            n = t.position().left + 6,
-            i = t.outerWidth();
-            t.addClass("cur").siblings().removeClass("cur"),
-            r.stop(!0, !1).animate({
-                left: n,
-                width: i
-            },
-            300)
-        }).siblings().removeClass("cur"),
-        e.on("mouseleave",
-        function(e) {
-			if(i===0){
-				$("nav > ul > li.nav_focus").hide();
-				}
-            r.stop(!0, !1).animate({
-                left: s,
-                width: i
-            },
-            300),
-            t.eq(o).addClass("cur").siblings().removeClass("cur");
-			
+        (function($) {
+            var e = $("nav > ul");
+            if (e.length) {
+                e.find(" > li.current-menu-item, > li.current-menu-parent").addClass("cur");
+                var n = $("nav > ul > li.cur").not(".nav_default");
+                if (!n.length) {
+                    var n = $("nav > ul > li.nav_default");
+                    $("nav > ul > li.nav_focus").hide();
+                }
+                var t = $("nav > ul > li").not(".nav_focus"),
+                    r = e.find(".nav_focus"),
+                    i = n.outerWidth(),
+                    s = n.position().left + 6,
+                    o = n.index();
+                r.stop(!0, !1).animate({
+                        left: s,
+                        width: i
+                    },
+                    300),
+                    t.eq(o).addClass("cur").end().on("mouseenter",
+                        function (e) {
+                            jQuery("nav > ul > li.nav_focus").show();
+                            var t = $(this),
+                                n = t.position().left + 6,
+                                i = t.outerWidth();
+                            t.addClass("cur").siblings().removeClass("cur"),
+                                r.stop(!0, !1).animate({
+                                        left: n,
+                                        width: i
+                                    },
+                                    300)
+                        }).siblings().removeClass("cur"),
+                    e.on("mouseleave",
+                        function (e) {
+                            if (i === 0) {
+                                $("nav > ul > li.nav_focus").hide();
+                            }
+                            r.stop(!0, !1).animate({
+                                    left: s,
+                                    width: i
+                                },
+                                300),
+                                t.eq(o).addClass("cur").siblings().removeClass("cur");
+
+                        });
+            }
         });
-		}
     };
     t(),
     e()
