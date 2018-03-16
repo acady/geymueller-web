@@ -187,6 +187,28 @@ $(function() {
 
 });
 
+
+$(function() {
+	$('section a[href^="#"]').bind('click', function(event) {
+													 
+		var $anchor = $(this);
+		
+		if( $( $anchor.attr('href')).length ){
+	
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top
+		}, Number(singlepage_params.scrolldelay), 'easeInOutExpo',function () {
+            $(document).on("scroll", onScroll);
+        }
+		);
+		event.preventDefault();
+		}
+		
+	});
+
+});
+
+
 $(document).on("scroll", onScroll);
 
 function onScroll(event){

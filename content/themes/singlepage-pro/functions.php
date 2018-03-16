@@ -1,6 +1,4 @@
 <?php
-
-add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_enqueue_scripts(){
 
     wp_register_script('require', get_bloginfo('template_url') . '/js/vendor/requirejs/require.js', array(), false, true);
@@ -16,13 +14,65 @@ function theme_enqueue_scripts(){
 
     /* PRODUCTION */
     wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
-//    wp_register_script('global', get_bloginfo('template_url') . '/js/optimized.min.js', array('require'), false, true);
+    // wp_register_script('global', get_bloginfo('template_url') . '/js/optimized.min.js', array('require'), false, true);
     wp_enqueue_script('global');
 
 
     wp_enqueue_style('global', get_bloginfo('template_url') . '/css/global.css');
 }
 
+
+/*
+ * check if a string contains a word (via http://stackoverflow.com/a/25633879/2621981)
+ */
+function containsWord($str, $word)
+{
+  return !!preg_match('#\\b' . preg_quote($word, '#') . '\\b#i', $str);
+}
+
+/*
+ * add text highlighting (tooltips) for geymueller
+ */
+function add_geymueller_highlights($content) {
+  // get all highlights from ACF
+  $fields = get_field('highlights');
+  if (empty($fields)) {
+    return $content;
+  }
+
+   foreach($fields as $field) {
+    $info = $field["description"];
+    if (!empty($field['image'])) {
+      $info .= "<img src=".$field['image'].">";
+    }
+
+    $highlight =
+     '<span ' .
+        ' class="highlight"'.
+        ' data-toggle="popover"'.
+        ' data-html="true"'.
+        ' data-content="'.$info.'"'.
+        ' data-trigger="hover"'.
+      ' >'.
+        $field["keyword"].
+    '</span>';
+    $content = str_replace($field["keyword"], $highlight, $content);
+  }
+
+  $content .=  '<script type="text/javascript">'.
+    '$(document).ready(function () { $(\'[data-toggle="popover"]\').popover(); });'.
+    '</script>';
+
+  return $content;
+}
+
+/**
+ * Load options framework
+ **/
+define('SINGLEPAGE_THEME_URI' ,trailingslashit( get_template_directory_uri()));
+define('SINGLEPAGE_THEME_DIR' ,trailingslashit( get_template_directory()));
+define('SINGLEPAGE_LIB_HOO_DIR' ,trailingslashit( get_template_directory()) .'lib/hoo-core/');
+define('SINGLEPAGE_LIB_HOO_URI' ,trailingslashit( get_template_directory_uri()) .'lib/hoo-core/');
 define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/admin/' );
 require_once dirname( __FILE__ ) . '/admin/options-framework.php';
 require_once get_template_directory() . '/options.php';

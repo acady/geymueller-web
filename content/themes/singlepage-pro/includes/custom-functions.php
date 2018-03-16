@@ -551,7 +551,6 @@ function singlepage_options_typography_enqueue_google_font($font) {
 */
 
  
-
 function singlepage_options_typography_font_styles($option, $selectors) {
 
       $output = $selectors . ' {';
@@ -859,3 +858,26 @@ function singlepage_hex2rgb( $hex ) {
 		return $rgb; // returns an array with the rgb values
 	}
 
+
+// Code before </head>
+
+ function singlepage_code_before_head(){
+	 
+   $code_before_head = of_get_option('header_code');
+   echo $code_before_head;
+   
+ } 
+
+add_action('wp_head', 'singlepage_code_before_head'); 
+
+
+ // Code before </body>
+	
+ function singlepage_code_before_body(){
+	 
+   $code_before_body = of_get_option('footer_code');
+   echo $code_before_body;
+   
+ } 
+
+add_action('wp_footer', 'singlepage_code_before_body'); 

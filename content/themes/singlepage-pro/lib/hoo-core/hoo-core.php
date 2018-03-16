@@ -13,7 +13,7 @@ if( ! class_exists( 'HooCore_Plugin' ) ) {
 		 */
 		const VERSION = '2.0.0';
 
-        /**
+		/**
 		 * @TODO - Rename "plugin-name" to the name your your plugin
 		 *
 		 * Unique identifier for your plugin.
@@ -45,7 +45,6 @@ if( ! class_exists( 'HooCore_Plugin' ) ) {
 		 * @since     1.0.0
 		 */
 		private function __construct() {
-		    define('SINGLEPAGE_LIB_HOO_URI', 'lib/hoo-core');
 			define('HOO_TINYMCE_URI', SINGLEPAGE_LIB_HOO_URI . 'tinymce');
 			define('HOO_TINYMCE_DIR', SINGLEPAGE_LIB_HOO_DIR .'tinymce');
 
@@ -70,7 +69,7 @@ if( ! class_exists( 'HooCore_Plugin' ) ) {
 				/*wp_enqueue_style( 'hoo-shortcodes', plugin_dir_url( __FILE__ ) . 'shortcodes.css' );
 				wp_enqueue_script( 'jquery-ui-accordion' );
 				wp_enqueue_script( 'jquery-ui-tabs' );*/
-				wp_enqueue_script( 'hoo-shortcodes-lib', "", array('jquery', 'jquery-ui-accordion', 'jquery-ui-tabs') );
+				wp_enqueue_script( 'hoo-shortcodes-lib', SINGLEPAGE_LIB_HOO_URI . 'js/hoo-shortcodes-lib.js', array('jquery', 'jquery-ui-accordion', 'jquery-ui-tabs') );
 			}
 
 			if ( get_user_option('rich_editing') == 'true' )

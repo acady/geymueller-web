@@ -127,18 +127,26 @@ function optionsframework_options() {
 		'std' => 'body{margin:0px;}',
 		'type' => 'textarea');
 	
+	
+	$options[] = array(
+		'name' => __('Header Tracking Code', 'singlepage'),
+		'desc' => __('The following css code will add to the header before the closing &lt;/head&gt; tag.', 'singlepage'),
+		'id' => 'header_code',
+		'std' => '',
+		'type' => 'textarea');
+	
+	$options[] = array(
+		'name' => __('Footer Tracking Code', 'singlepage'),
+		'desc' => __('The following css code will add to the footer before the closing &lt;/body&gt; tag.', 'singlepage'),
+		'id' => 'footer_code',
+		'std' => '',
+		'type' => 'textarea');
+	
 		
      $options[] = array(
 		'name' => __('Home Page', 'singlepage'),
 		'type' => 'heading');
-	 
-	 /*$options[] = array(
-		'name' => __('Enable Featured Homepage', 'singlepage'),
-		'desc' => sprintf(__('Active featured homepage Layout.  The standardized way of creating Static Front Pages: <a href="%s" target="_blank">Creating a Static Front Page</a>', 'singlepage'),esc_url('http://codex.wordpress.org/Creating_a_Static_Front_Page')),
-		'id' => 'enable_home_page',
-		'std' => '1',
-		'type' => 'checkbox');*/
-	 
+	  
 	
 	 $options[] = array(
 		'name' => __( 'Section Height Mode ( Desktop & Tablet )', 'singlepage' ),
@@ -165,12 +173,6 @@ function optionsframework_options() {
 						   )
 		);
 	 
-	/* $options[] = array(
-		'name' => __('Hide Side Navigation', 'singlepage'),
-		'desc' => __('Hide home page scroll bar.', 'singlepage'),
-		'id' => 'hide_scroll_bar',
-		'std' => '0',
-		'type' => 'checkbox');*/
 	 
 	 
 	$options[] = array('name' => __('Scrolling Delay', 'singlepage'),'class'=>'mini','id' => 'scrolldelay','type' => 'text','std'=>'700','desc'=> '');

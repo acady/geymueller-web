@@ -360,7 +360,6 @@
 
 
 $output .= '<script>jQuery(document).ready(function($) {
-									
 				$("#'.$slider_id.'").maximage({
 					cycleOptions: {
 						fx: "fade",
@@ -428,8 +427,8 @@ $output .= '<script>jQuery(document).ready(function($) {
 			
 	   $output .= ' <div class="container">
 		<div class="section-inner">
-			<div class="section-content" style="'.str_replace('"','\'',$content_style).'">'.do_shortcode( $content ).'</div>';
-		
+			<div class="section-content" style="'.str_replace('"','\'',$content_style).'">'.add_geymueller_highlights(do_shortcode( $content )).'</div>';
+
 		if( $image!='' ){
 			if( $image_link !='' ){
 				$output .= '<a href="'.esc_url($image_link).'" style=" display:black;" target="'.esc_attr($image_link_target).'"><div class="section-image" style="background-image:url('.esc_url($image).')"></div></a>';
@@ -507,6 +506,12 @@ $output .= '<script>jQuery(document).ready(function($) {
  ?>
 <div class="content"> <?php echo $output;?>
   <div class="clear"></div>
+  <script>
+    jQuery(document).ready(function($) {
+      // load here instead of wp_enqueue (via https://stackoverflow.com/questions/11533168)
+      $.getScript("<?=get_template_directory_uri()?>/js/jquery.easing.1.3.js");
+    });
+  </script>
 </div>
 <?php 
     $youtube_video_background_section = of_get_option( 'youtube_video_background_section' ,'0' );

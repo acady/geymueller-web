@@ -30,7 +30,9 @@ if (!defined('DB_PASSWORD')) {
 	define('DB_PASSWORD', 'geymueller');
 }
 if (!defined('DB_HOST')) {
-	define('DB_HOST', 'localhost');
+  // use database from server. requires SSH port forwarding like so:
+  // ssh -f <your-user-name>@88.198.35.70 -L 7702:127.0.0.1:3306 -N
+	define('DB_HOST', '127.0.0.1:7702');
 }
 
 /** Database Charset to use in creating database tables. */
@@ -109,7 +111,7 @@ if (!defined('WP_CONTENT_URL')) {
  * in their development environments.
  */
 if (!defined('WP_DEBUG')) {
-	define('WP_DEBUG', false);
+	define('WP_DEBUG', true);
 }
 
 /* That's all, stop editing! Happy blogging. */

@@ -1,5 +1,12 @@
 ===== Change Log =====
 
+= Version 2.6.7
+* Fixed Jquery plugins conflict issue
+
+= Version 2.6.6
+* Added theme option - Basic Settings -> Header Tracking Code
+* Added theme option - Basic Settings -> Footer Tracking Code
+
 = Version 2.6.5
 * Fixed responsive menu issue on mobile( landscape )
 
