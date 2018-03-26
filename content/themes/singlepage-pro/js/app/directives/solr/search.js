@@ -176,7 +176,7 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
                   }
                 });
                 if (selectedFacetValue) {
-                  facetFilters.push(selectedFacetKey + ':(' + selectedFacetValue + ')');
+                  facetFilters.push(selectedFacetKey.replace(/\ /g, '\\ ') + ':(' + selectedFacetValue + ')');
                 }
 
               } else {
@@ -189,7 +189,7 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
                   }
                 });
                 if (selectedFacetValue) {
-                  facetFilters.push(selectedFacetKey + ':' + selectedFacetValue + '');
+                  facetFilters.push(selectedFacetKey.replace(/\ /g, '\\ ') + ':' + selectedFacetValue + '');
                 }
 
               }

@@ -12,23 +12,23 @@ define(['directives/module'], function (directives) {
       },
       link: function(scope, element, attrs, search){
 
-        search.registerFacetField(scope.facetConfig.facetfield, scope.facetConfig.facettitle);
+        search.registerFacetField(scope.facetConfig, scope.facetConfig);
 
-        scope.facetTitle = scope.facetConfig.facettitle;
+        scope.facetTitle = scope.facetConfig;
 
         scope.toggleFacetValue = function(facetValue) {
-          facetservice.toggleFacetValue(scope.currentSearch.selectedFacets, scope.facetConfig.facetfield, facetValue);
+          facetservice.toggleFacetValue(scope.currentSearch.selectedFacets, scope.facetConfig, facetValue);
         };
 
         scope.expandFacetValue = function(facetValue) {
-          facetservice.expandFacetValue(scope.currentSearch, scope.facetConfig.facetfield, facetValue);
+          facetservice.expandFacetValue(scope.currentSearch, scope.facetConfig, facetValue);
         };
 
         scope.isRefined = function(facetValue) {
-          return facetservice.isRefined(scope.currentSearch.selectedFacets, scope.facetConfig.facetfield, facetValue);
+          return facetservice.isRefined(scope.currentSearch.selectedFacets, scope.facetConfig, facetValue);
         };
 
-        scope.$watch('searchResult.facet_counts.facet_fields.' + scope.facetConfig.facetfield, function(value){
+        scope.$watch('searchResult.facet_counts.facet_fields.' + scope.facetConfig, function(value){
           var layers = {};
           _.each(value, function(element, index){
             if(index % 2 === 1){

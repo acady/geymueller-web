@@ -12,28 +12,28 @@ define(['directives/module'], function (directives) {
           },
           link: function(scope, element, attrs, searchController){
               
-              searchController.registerFacetField(scope.facetConfig.facetfield, scope.facetConfig.facettitle);
+              searchController.registerFacetField(scope.facetConfig, scope.facetConfig);
               
-              scope.facetTitle = scope.facetConfig.facettitle;
+              scope.facetTitle = scope.facetConfig;
               
               scope.toggleNotFacetValue = function(facetValue) {
-                facetservice.toggleFacetValue(scope.currentSearch.selectedFacets, '!' + scope.facetConfig.facetfield, facetValue);
+                facetservice.toggleFacetValue(scope.currentSearch.selectedFacets, '!' + scope.facetConfig, facetValue);
               };
               
               scope.isNot = function(facetValue) {
-                return facetservice.isRefined(scope.currentSearch.selectedFacets, '!' + scope.facetConfig.facetfield, facetValue);
+                return facetservice.isRefined(scope.currentSearch.selectedFacets, '!' + scope.facetConfig, facetValue);
               };
               
               scope.toggleFacetValue = function(facetValue) {
-                facetservice.toggleFacetValue(scope.currentSearch.selectedFacets, scope.facetConfig.facetfield, facetValue);
+                facetservice.toggleFacetValue(scope.currentSearch.selectedFacets, scope.facetConfig, facetValue);
               };
               
               scope.expandFacetValue = function(facetValue) {
-                facetservice.expandFacetValue(scope.currentSearch, scope.facetConfig.facetfield, facetValue);
+                facetservice.expandFacetValue(scope.currentSearch, scope.facetConfig, facetValue);
               };
               
               scope.isRefined = function(facetValue) {
-                return facetservice.isRefined(scope.currentSearch.selectedFacets, scope.facetConfig.facetfield, facetValue);
+                return facetservice.isRefined(scope.currentSearch.selectedFacets, scope.facetConfig, facetValue);
               };
               
               scope.globalSearchResult = searchController.globalSearchResult;

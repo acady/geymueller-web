@@ -690,7 +690,7 @@
   <script type="text/ng-template" id="/facet.html">
     <facetcontainer facet-title="facetTitle">
       <ul>
-        <li ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig.facetfield] track by $index"
+        <li ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig] track by $index"
             ng-if="$index % 2 === 0 && $index < 20" class="facet-checkbox facet-line">
 
           <input type="checkbox" ng-click="toggleFacetValue(facetValue)"
@@ -707,12 +707,12 @@
               {{ facetValue }}
             </a></label>
           <span class="facet-count">
-      <a href="" class="facet-link toggle-refine" ng-click="toggleFacetValue(facetValue)">{{ searchResult.facet_counts.facet_fields[facetConfig.facetfield][$index + 1] }}</a>
+      <a href="" class="facet-link toggle-refine" ng-click="toggleFacetValue(facetValue)">{{ searchResult.facet_counts.facet_fields[facetConfig][$index + 1] }}</a>
       /
-      <a href="" class="facet-link toggle-refine" ng-click="expandFacetValue(facetValue)">{{ globalSearchResult.facet_counts.facet_fields_map[facetConfig.facetfield][facetValue] }}</a>
+      <a href="" class="facet-link toggle-refine" ng-click="expandFacetValue(facetValue)">{{ globalSearchResult.facet_counts.facet_fields_map[facetConfig][facetValue] }}</a>
     </span>
         </li>
-        <li ng-if="searchResult.facet_counts.facet_fields[facetConfig.facetfield].length >= 20">
+        <li ng-if="searchResult.facet_counts.facet_fields[facetConfig].length >= 20">
           <a href="" ng-click="openFacetModal()" class="facet-link">Mehr anzeigen</a>
         </li>
       </ul>
@@ -727,7 +727,7 @@
       <input type="text" ng-model="facetModalFilter" class="form-control">
       <ul>
         <li
-            ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig.facetfield] | filter: filterUnuseful() | filter: facetModalFilter | orderBy: 'toString()' track by $index"
+            ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig] | filter: filterUnuseful() | filter: facetModalFilter | orderBy: 'toString()' track by $index"
             ng-if="$index % 2 === 0 && $index < 100">
           <a href="" ng-click="toggleFacetValue(facetValue)">
             {{ facetValue }}
@@ -745,7 +745,7 @@
         <span class="facet-count">
     <a href="" class="facet-link toggle-refine" ng-click="toggleFacetValue(node.originalValue)">{{ node.count }}</a>
     /
-    <a href="" class="facet-link toggle-refine" ng-click="expandFacetValue(node.originalValue)">{{ globalSearchResult.facet_counts.facet_fields_map[facetConfig.facetfield][node.originalValue] }}</a>
+    <a href="" class="facet-link toggle-refine" ng-click="expandFacetValue(node.originalValue)">{{ globalSearchResult.facet_counts.facet_fields_map[facetConfig][node.originalValue] }}</a>
   </span>
       </treecontrol>
     </facetcontainer>
