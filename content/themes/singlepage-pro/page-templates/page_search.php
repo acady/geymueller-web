@@ -806,7 +806,33 @@
                 </div>
               </div>
               <div class="hits">
-                <?php echo get_field('hithtml'); ?>
+                  <div class="row">
+                      <div class="hit-cell hit-cell-rectangle" ng-repeat-start="hit in searchResults[searchResultsIndex].response.docs">
+
+                          <button type="button" class="hit-btn" ng-click="openModal(hit, searchResults[searchResultsIndex].responseHeader.params.searchtext)">
+                              <img ng-src="{{ retrieveImageUrl(hit) }}" alt="{{ hit.Objekt }}" class="hit-img">
+                          </button>
+
+                          <div>
+                              <div class="hit-text-full">
+                                  <searchhit data-content="Inventarnummer" data-label></searchhit>
+                                  <searchhit data-content="Objekt" data-label></searchhit>
+                                  <searchhit data-content="Bezeichnung" data-label></searchhit>
+                                  <searchhit data-content="Inhalt" data-label></searchhit>
+                                  <searchhit data-content="Material" data-label></searchhit>
+                                  <searchhit data-content="Technik" data-label></searchhit>
+                                  <searchhit data-content="Maße" data-label></searchhit>
+                                  <searchhit data-content="zg" data-label></searchhit>
+                                  <searchhit data-content="Aufschrift Merkmale" data-label></searchhit>
+                                  <searchhit data-content="Sankt Peter" data-label></searchhit>
+                                  <searchhit data-content="Thesaurus" data-label></searchhit>
+                                  <searchhit data-content="Bramante" data-label></searchhit>
+                                  <searchhit data-content="Sonstiges" data-label></searchhit>
+                              </div>
+                          </div>
+                      </div>
+                      <div ng-repeat-end=""></div>
+                  </div>
               </div>
               <div class="row">
                 <div class="search-pagination">
