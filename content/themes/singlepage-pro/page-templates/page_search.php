@@ -810,7 +810,9 @@
 
                         <div class="row">
                             <div class="col-sm-6 hit-img-container">
-                                <img ng-src="{{ retrieveImageUrl(hit) }}" class="hit-img">
+                                <a ng-href="{{ retrieveImageUrl(hit) }}" target="_blank">
+                                    <img ng-src="{{ retrieveImageUrl(hit) }}" class="hit-img">
+                                </a>
                             </div>
                             <div class="col-sm-6">
                                 <searchhit data-content="Inventarnummer" data-label></searchhit>
