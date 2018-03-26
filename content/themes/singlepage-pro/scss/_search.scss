@@ -147,6 +147,18 @@ div.hit-cell {
   
 }
 
+.hit-img-container {
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+.hit-img {
+  height: 400px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 .hit-cell-lg {
   @include make-sm-column(6);
   
@@ -214,8 +226,8 @@ div.hit-cell {
   .hit-img {
     display: inline-block;
     margin: 0;
-    height: auto;
-    width: 200px;
+    height: 400px;
+    width: auto;
     padding-top: 0;
   }
   

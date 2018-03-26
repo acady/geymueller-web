@@ -806,12 +806,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4" ng-repeat-start="hit in searchResults[searchResultsIndex].response.docs">
+                    <div class="col-sm-6" ng-repeat="hit in searchResults[searchResultsIndex].response.docs">
 
-                        <img ng-src="{{ retrieveImageUrl(hit) }}" class="hit-img">
-
-                        <div>
-                            <div class="hit-text-full">
+                        <div class="row">
+                            <div class="col-sm-6 hit-img-container">
+                                <img ng-src="{{ retrieveImageUrl(hit) }}" class="hit-img">
+                            </div>
+                            <div class="col-sm-6">
                                 <searchhit data-content="Inventarnummer" data-label></searchhit>
                                 <searchhit data-content="Objekt" data-label></searchhit>
                                 <searchhit data-content="Bezeichnung" data-label></searchhit>
@@ -827,8 +828,8 @@
                                 <searchhit data-content="Sonstiges" data-label></searchhit>
                             </div>
                         </div>
+
                     </div>
-                    <div ng-repeat-end=""></div>
                 </div>
                 <div uib-pagination ng-change="pageChanged()" ng-model="currentSearch.page"
                      total-items="searchResults[searchResultsIndex].response.numFound"

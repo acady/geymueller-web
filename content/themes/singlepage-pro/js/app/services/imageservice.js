@@ -11,7 +11,7 @@ define(['services/module'], function (services) {
       retrieveImageUrl: function(hit, size) {
           if(hit && hit.id && hit.Inventarnummer) {
               var id = ('0000' + hit.id).slice(-4);
-              return startUrlPart + id + '/' + hit.Inventarnummer + '.jpg';
+              return startUrlPart + id + '.jpg';
           }
           return '';
         }

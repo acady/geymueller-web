@@ -1,0 +1,1 @@
+for subdir in */*.jpg; do cp "$subdir" "../../../geymueller-web/content/themes/singlepage-pro/images/content/${subdir:0:4}.jpg"; done;
