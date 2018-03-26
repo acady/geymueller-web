@@ -33,10 +33,7 @@
 					?>
                     </ul>
                 </div><!--END footer-navigation-->
-                
-                <div>
-                	<span id="copyright"><?php echo of_get_option('copyright','&copy; 2015, Powered by <a href="http://wordpress.org/">WordPress</a>. Designed by <a href="http://www.hoosoft.com/">Hoo Themes</a>.');?></span>
-                </div><!--END copywrite-->
+
                 </div>
             </div><!--END footerwrap-->
             <div class="clear"></div>

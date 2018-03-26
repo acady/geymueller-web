@@ -55,7 +55,7 @@ define(['controllers', 'directives', 'filters', 'lodash'], function () {
 
   app.constant('config', {
     //solrBaseUrl: 'http://localhost:8983'
-    solrBaseUrl: 'http://realonline.imareal.sbg.ac.at',
+    solrBaseUrl: 'http://test.zedlacher.org:8984',
     //solrBaseUrl: 'http://104.45.88.196'
     // solrBaseUrl: 'http://realonline.imareal.sbg.ac.at.local'
     apiBaseUrl: 'http://cf000044.sbg.ac.at/api/data/',

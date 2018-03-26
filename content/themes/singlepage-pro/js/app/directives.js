@@ -13,6 +13,5 @@ define('directives', [
   './directives/pulldown',
   './directives/solr/facet',
   './directives/solr/hierarchicalfacet',
-  './directives/solr/facetcontainer',
-  './directives/solr/antepostfacet'
+  './directives/solr/facetcontainer'
 ]);

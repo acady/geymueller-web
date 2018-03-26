@@ -751,57 +751,6 @@
     </facetcontainer>
   </script>
 
-  <script type="text/ng-template" id="/antepostfacet.html">
-    <facetcontainer facet-title="facetTitle">
-      <input type="checkbox" class="facet-check-antepost" id="chk_exactmatch"
-             ng-model="antepostfacetconfig.exactmatch"
-             class="form-control" ng-change="exactmatchChanged()">
-      <label for="chk_exactmatch" class="facet-lable">Exakte Jahreszahlen</label>
-      <div ng-if="!antepostfacetconfig.exactmatch">
-        <br/>
-        <input type="radio" class="facet-check-antepost" id="chk_contain" name="antepostfacet.mode"
-               ng-model="antepostfacetconfig.mode" class="form-control" value="contain"
-               ng-change="modeChanged()">
-        <label for="chk_contain" class="facet-lable">Enthalten</label>
-        <br/>
-        <input type="radio" class="facet-check-antepost" id="chk_overlap" name="antepostfacet.mode"
-               ng-model="antepostfacetconfig.mode" class="form-control" value="overlap"
-               ng-change="modeChanged()">
-        <label for="chk_overlap" class="facet-lable">&Uuml;berschneiden:</label>
-        <br/>
-        <span class="facet-lable-input">von</span>
-        <br>
-        <input type="text" ng-model="antepostfacetconfig.post" class="form-control">
-        <p>
-          <ion-range-slider type="double" min="min" max="max" from="" to="antepostfacetconfig.post"
-                            on-change="sliderChanged(a)"></ion-range-slider>
-          <rzslider rz-slider-model="antepostfacetconfig.post"
-                    rz-slider-high="antepostfacetconfig.ante"
-                    rz-slider-options="sliderOptions"></rzslider>
-        </p>
-
-        <span class="facet-lable-input">bis</span>
-        <br>
-        <input type="text" ng-model="antepostfacetconfig.ante" class="form-control">
-      </div>
-      <div ng-if="antepostfacetconfig.exactmatch">
-        <span class="facet-lable-input">Post</span>
-        <br>
-
-        <input type="text" ng-model="antepostfacetconfig.exactpost" class="form-control">
-        <br>
-        <span class="facet-lable-input">Ante</span>
-        <br>
-
-        <input type="text" ng-model="antepostfacetconfig.exactante" class="form-control">
-      </div>
-      <br>
-      <canvas class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colors"
-              chart-options="chartOptions">
-      </canvas>
-    </facetcontainer>
-  </script>
-
   <script type="text/ng-template" id="/facetcontainer.html">
     <div class="facet" ng-class="{open: facetOpen}">
       <h5 ng-bind-html="facetTitle | trusted_html" ng-click="toggleFacetOpen()"></h5>
@@ -811,15 +760,9 @@
   </script>
 
   <search index-name="<?php echo get_field('indexname'); ?>" ng-cloak="">
-    <div class="search-main-container">
-      <uib-tabset active="tabIndex" class="search-tabs">
-        <uib-tab ng-repeat="currentSearch in searches track by $index" index="$index"
-                 ng-init="searchResultsIndex = $index;">
-          <uib-tab-heading>
-            Suche: {{currentSearch.searchtext}}&nbsp;
-            <button type="button" class="close" ng-click="removeTab(searchResultsIndex)"
-                    ng-if="searches.length > 1">&times;</button>
-          </uib-tab-heading>
+    <div class="search-main-container" ng-repeat="currentSearch in searches track by $index" index="$index" ng-init="searchResultsIndex = $index;">
+
+          <button type="button" class="close" ng-click="removeTab(searchResultsIndex)" ng-if="searches.length > 1">&times;</button>
 
           <div class="selectedFacets" ng-if="showSelectedFacets(currentSearch.selectedFacets)">
             <div class="selectedFacetsCaption">Suchgeschichte</div>
@@ -906,12 +849,6 @@
                       <br/>
                     <?php } ?>
 
-                    <?php if ($facettab['title'] == 'Werke') { ?>
-                      <antepostfacet current-search="currentSearch"
-                                     search-result="searchResults[searchResultsIndex]"
-                                     min="700" max="1900"></antepostfacet>
-                    <?php } ?>
-
                     <?php if ($facettab['facets'] != '') { ?>
                       <facet facet-config="tmpFacetConfig" current-search="currentSearch"
                              search-result="searchResults[searchResultsIndex]" disjunctive="true"
@@ -933,31 +870,8 @@
                 ?>
 
               </uib-tabset>
-              <!-- IntroJS implementierung -->
-              <!--<a href='#' data-intro='Hier findet man die durchsuchbaren Bereiche....' ><span class="help-link">Was suchen.....</span></a>-->
             </div>
           </div>
-        </uib-tab>
-
-<!--        <uib-tab ng-click="startNewSearch();" ng-if="searchResults" disable="true">-->
-<!--          <uib-tab-heading>-->
-<!--            <i class="glyphicon glyphicon-plus"></i>-->
-<!--          </uib-tab-heading>-->
-<!--        </uib-tab>-->
-<!---->
-<!--        <uib-tab ng-click="openSaveModal();" ng-if="searchResults" disable="true">-->
-<!--          <uib-tab-heading>-->
-<!--            <i class="glyphicon glyphicon-floppy-save"></i>-->
-<!--          </uib-tab-heading>-->
-<!--        </uib-tab>-->
-<!---->
-<!--        <uib-tab ng-click="openLoadModal();" ng-if="searchResults" disable="true">-->
-<!--          <uib-tab-heading>-->
-<!--            <i class="glyphicon glyphicon-floppy-open"></i>-->
-<!--          </uib-tab-heading>-->
-<!--        </uib-tab>-->
-
-      </uib-tabset>
 
     </div>
 
