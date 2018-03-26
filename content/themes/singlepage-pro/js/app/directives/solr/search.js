@@ -13,7 +13,7 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
 
           var ctrl = this;
           var facetFields = [];
-          var facetTitles = {ante: 'Ante', post: 'Post', thesaurus: 'Thesaurus'};
+          var facetTitles = { };
 
           ctrl.registerFacetField = function (facetKey, facetTitle) {
             facetFields.push(facetKey);
@@ -107,7 +107,7 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
           $scope.startNewSearch = function () {
             var newIndex = $scope.searches.length;
             $scope.searches.splice(newIndex, 0, {
-              searchfield: 'suche_beschreibungen',
+              searchfield: 'suche_alles',
               searchtext: '',
               selectedFacets: {}
             });
@@ -157,9 +157,6 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
             localStorageService.set(searchesStorageName, $scope.searches);
 
             var currentSearch = $scope.searches[$scope.tabIndex];
-            var antepostFilter = '';
-            var post = 0;
-            var ante = 2500;
 
             var facetFilters = [];
             _.map(currentSearch.selectedFacets, function (selectedFacet, selectedFacetKey) {
@@ -182,49 +179,6 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
                   facetFilters.push(selectedFacetKey + ':(' + selectedFacetValue + ')');
                 }
 
-              } else if (selectedFacetKey === 'ante' || selectedFacetKey === 'post') {
-                  _.map(selectedFacet, function (selected, key) {
-                  if (selected) {
-                    selectedFacetValue += key;
-                  }
-                });
-                if (selectedFacetValue) {
-
-                  var splitted = selectedFacetValue.split(" ");
-
-                  if (splitted.length === 1) {
-
-                    if (antepostFilter) {
-                      antepostFilter += ' AND ';
-                    }
-
-                    if (selectedFacetKey === 'post') {
-                      post = selectedFacetValue;
-                    }
-                    if (selectedFacetKey === 'ante') {
-                      ante = selectedFacetValue;
-                    }
-
-                    antepostFilter += selectedFacetKey + ':' + selectedFacetValue;
-
-                  } else {
-
-                    var mode = splitted[3];
-                    post = splitted[0];
-                    ante = splitted[2];
-
-                    if (antepostFilter) {
-                      if (mode === 'Enthalten') {
-                        antepostFilter += ' AND ';
-                      } else {
-                        antepostFilter += ' OR ';
-                      }
-                    }
-                    antepostFilter += selectedFacetKey + ':[' + post + ' TO ' + ante + ']';
-
-                  }
-                }
-
               } else {
                 _.map(selectedFacet, function (selected, key) {
                   if (selected) {
@@ -241,13 +195,9 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
               }
             });
 
-            if (antepostFilter) {
-              facetFilters.push("(" + antepostFilter + ")");
-            }
-
             currentSearch.page = currentSearch.page ? currentSearch.page : 1;
             currentSearch.rows = currentSearch.rows ? currentSearch.rows : '12';
-            currentSearch.searchfield = currentSearch.searchfield ? currentSearch.searchfield : 'suche_beschreibungen';
+            currentSearch.searchfield = currentSearch.searchfield ? currentSearch.searchfield : 'suche_alles';
             currentSearch.searchtext = currentSearch.searchtext ? currentSearch.searchtext : '';
 
             var solrSearchtext = '';
@@ -265,9 +215,6 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
 
             canceler = $q.defer();
 
-            post = parseInt(post, 10);
-            ante = parseInt(ante, 10);
-
             $http.get(config.solrBaseUrl + '/solr/' + $attrs.indexName + '/select', {
               timeout: canceler.promise,
               params: {
@@ -276,13 +223,7 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
                 'wt': 'json',
                 'facet': 'true',
                 'facet.limit': '1000000',
-                'f.thesaurus.facet.limit': '1000000',
                 'facet.field': facetFields,
-                'facet.range': 'ante',
-                'f.ante.facet.range.start': post,
-                'f.ante.facet.range.end': ante,
-                'f.ante.facet.range.gap': Math.round(( ante - post ) / 7),
-                'f.ante.facet.range.hardend': true,
                 'fq': facetFilters,
                 'start': (currentSearch.page - 1) * currentSearch.rows,
                 'rows': currentSearch.rows

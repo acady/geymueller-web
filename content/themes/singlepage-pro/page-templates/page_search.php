@@ -783,16 +783,10 @@
 
           <div class="row">
             <div class="search-container">
-              <div class="collection-input-container form-group has-icon-left">
+              <div class="collection-input-container form-group">
                 <input id="search-input" type="text" autocomplete="off" spellcheck="false"
-                       autocorrect="off" placeholder="Suchtext oder Archivnummer eingeben..."
+                       autocorrect="off" placeholder="Suchtext eingeben..."
                        class="form-control" ng-model="currentSearch.searchtext">
-<!--                <select class="form-control" ng-model="currentSearch.searchfield">-->
-<!--                  <option value="suche_beschreibungen">Beschreibungen</option>-->
-<!--                  <option value="suche_werke">Werke</option>-->
-<!--                  <option value="suche_alles">Alles</option>-->
-<!--                </select>-->
-                <i class="glyphicon icon-Realienkunde-_Suche icon-left"></i>
               </div>
             </div>
           </div>
