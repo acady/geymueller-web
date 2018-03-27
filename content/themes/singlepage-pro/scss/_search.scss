@@ -150,6 +150,10 @@ div.hit-cell {
 .hit-img-container {
   background-color: black;
   margin-bottom: 5px;
+
+  a, a:visited, a:hover {
+    color: white !important;
+  }
 }
 
 .hit-img {

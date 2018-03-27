@@ -811,7 +811,7 @@
                         <div class="row">
                             <div class="col-sm-6 hit-img-container">
                                 <a ng-href="{{ retrieveImageUrl(hit) }}" target="_blank">
-                                    <img ng-src="{{ retrieveImageUrl(hit) }}" class="hit-img">
+                                    <img ng-src="{{ retrieveImageUrl(hit) }}" class="hit-img" alt="Kein Bild vorhanden">
                                 </a>
                             </div>
                             <div class="col-sm-6">
