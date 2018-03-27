@@ -822,6 +822,12 @@
                                 <searchhit data-content="Thesaurus" data-label></searchhit>
                                 <searchhit data-content="Bramante" data-label></searchhit>
                                 <searchhit data-content="Sonstiges" data-label></searchhit>
+                                <searchhit data-content="Eigenschaft" data-label></searchhit>
+                                <searchhit data-content="Typ" data-label></searchhit>
+                                <searchhit data-content="Beziehung" data-label></searchhit>
+                                <searchhit data-content="Zeit" data-label></searchhit>
+                                <searchhit data-content="Ort" data-label></searchhit>
+                                <searchhit data-content="Bezeichnung" data-label></searchhit>
                             </div>
                         </div>
 
