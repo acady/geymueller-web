@@ -798,12 +798,6 @@
                     <div class="search-result-count">
                       {{searchResults[searchResultsIndex].response.numFound | number}} Ergebnisse
                     </div>
-                    <div class="search-celltype">
-                      <select class="btn sort-pages btn-secondary dropdown-toggle"
-                              ng-model="currentSearch.rows"
-                              ng-options="hitsPerPageOption.id as hitsPerPageOption.name for hitsPerPageOption in hitsPerPageOptions">
-                      </select>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6" ng-repeat="hit in searchResults[searchResultsIndex].response.docs">

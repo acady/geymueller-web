@@ -8053,6 +8053,21 @@ div.hit-cell {
   display: block;
 }
 
+.hit-img-container {
+  background-color: black;
+  margin-bottom: 5px;
+}
+.hit-img-container a, .hit-img-container a:visited, .hit-img-container a:hover {
+  color: white !important;
+}
+
+.hit-img {
+  height: 400px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 .hit-cell-lg {
   position: relative;
   min-height: 1px;
@@ -8114,8 +8129,8 @@ div.hit-cell {
 .hit-cell-rectangle .hit-img {
   display: inline-block;
   margin: 0;
-  height: auto;
-  width: 200px;
+  height: 400px;
+  width: auto;
   padding-top: 0;
 }
 .hit-cell-rectangle .hit-text-full {
