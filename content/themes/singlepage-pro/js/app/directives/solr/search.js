@@ -1,10 +1,10 @@
 define(['directives/module', 'openseadragon', 'introJs'], function (directives, openseadragon, introJs) {
 
   directives.directive('search', [
-    '$uibModal', '$http', '$timeout', '$q', '$location', 'localStorageService', 'facetservice', 'config',
-    'imageservice', 'searchservice', 'Notification', 'productservice',
-    function ($uibModal, $http, $timeout, $q, $location, localStorageService, facetservice, config, imageservice,
-              searchservice, Notification, productservice) {
+    '$uibModal', '$http', '$timeout', '$q', '$location', 'facetservice', 'config',
+    'imageservice', 'Notification', 'productservice',
+    function ($uibModal, $http, $timeout, $q, $location, facetservice, config, imageservice,
+              Notification, productservice) {
       return {
         restrict: 'E',
         transclude: true,
@@ -39,7 +39,7 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
                 selectedFacets: {}
               }];
             } else {
-              $scope.searches = localStorageService.get(searchesStorageName) ? localStorageService.get(searchesStorageName) : [{selectedFacets: {}}];
+              $scope.searches = [{selectedFacets: {}}];
             }
             $scope.searchResults = [{}];
           };
@@ -153,8 +153,6 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
           var canceler = null;
 
           $scope.updateQuery = function () {
-
-            localStorageService.set(searchesStorageName, $scope.searches);
 
             var currentSearch = $scope.searches[$scope.tabIndex];
 
@@ -277,18 +275,6 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
             });
           };
 
-          var savingsStorageName = window.location.pathname + 'savings';
-
-          $scope.save = function (close) {
-            searchservice.getSavings(savingsStorageName).then(function (savings) {
-              if (!savings) {
-                savings = {};
-              }
-              savings[$scope.saveForm.saveName] = angular.copy($scope.searches);
-              searchservice.setSavings(savingsStorageName, savings).then(close);
-            });
-          };
-
           $scope.openQuelleModal = function (quelle) {
             $uibModal.open({
               controller: 'QuelleModalController',
@@ -299,20 +285,6 @@ define(['directives/module', 'openseadragon', 'introJs'], function (directives, 
                 }
               }
             });
-          };
-
-          $scope.openLoadModal = function () {
-            searchservice.getSavings(savingsStorageName).then(function (savings) {
-              $scope.savings = savings;
-              $uibModal.open({
-                templateUrl: '/loadmodal.html',
-                $scope: $scope
-              });
-            });
-          };
-
-          $scope.load = function (saving) {
-            searchservice.setSavings(searchesStorageName, saving).then(init);
           };
 
           $scope.retrieveImageUrl = function (hit) {

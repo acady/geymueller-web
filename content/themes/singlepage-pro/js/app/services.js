@@ -3,6 +3,5 @@ define('services', [
   './services/imageservice',
   './services/facetservice',
   './services/productservice',
-  './services/dataservice',
-  './services/searchservice'
+  './services/dataservice'
 ]);

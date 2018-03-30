@@ -10,7 +10,6 @@ require.config({
     "openseadragon": "vendor/openseadragon/built-openseadragon/openseadragon/openseadragon",
     "angularjs-slider": "vendor/angularjs-slider/dist/rzslider",
     "angular-tree-control": "vendor/angular-tree-control/angular-tree-control",
-    "angular-local-storage": "vendor/angular-local-storage/dist/angular-local-storage",
     "angular-loading-bar": "vendor/angular-loading-bar/build/loading-bar",
     "angular-ui-router": "vendor/angular-ui-router/release/angular-ui-router",
     "angular-chart": "vendor/angular-chart.js/dist/angular-chart",
@@ -39,16 +38,14 @@ require.config({
       "angular-ui-notification": { deps: ["angular"] },
       "services": { deps: ["angular-chart", "angular-ui-router", "angular-sanitize",
         "angular-animate", "angular-loading-bar", "angular-bootstrap", "angular-smooth-scroll",
-        "angular-ui-notification", "angularjs-slider", "angular-tree-control",
-        "angular-local-storage"]
+        "angular-ui-notification", "angularjs-slider", "angular-tree-control"]
       },
       "controllers": { deps: ["services"] },
       "directives": { deps: ["services"] },
       "filters": { deps: ["services"] },
       "ion.rangeSlider": { deps: ["jquery"] },
       "ion.rangeslider-angularjs": { deps: ["angular", "ion.rangeSlider"] },
-      "angular-tree-control": { deps: ["angular"] },
-      "angular-local-storage": { deps: ["angular"] }
+      "angular-tree-control": { deps: ["angular"] }
     }
 });
 

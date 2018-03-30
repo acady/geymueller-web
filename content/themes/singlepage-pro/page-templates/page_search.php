@@ -827,7 +827,7 @@
                                 <searchhit data-content="Beziehung" data-label></searchhit>
                                 <searchhit data-content="Zeit" data-label></searchhit>
                                 <searchhit data-content="Ort" data-label></searchhit>
-                                <searchhit data-content="Bezeichnung" data-label></searchhit>
+                                <searchhit data-content="Typenbezeichnung" data-label></searchhit>
                             </div>
                         </div>
 
