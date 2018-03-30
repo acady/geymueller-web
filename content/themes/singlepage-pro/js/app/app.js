@@ -1,6 +1,6 @@
 define(['controllers', 'directives', 'filters', 'lodash'], function () {
   'use strict';
-  var app = angular.module('app', ['app.controllers', 'app.directives', 'app.filters', 'chart.js', 'ui.bootstrap', 'ui.router', 'ngSanitize', 'smoothScroll', 'ui-notification', 'rzModule', 'treeControl', 'ngAnimate', 'angular-loading-bar']);
+  var app = angular.module('app', ['app.controllers', 'app.directives', 'app.filters', 'ui.bootstrap', 'ui.router', 'ngSanitize', 'smoothScroll', 'ui-notification', 'treeControl', 'ngAnimate', 'angular-loading-bar']);
 
   app.config(['$locationProvider', '$stateProvider', function ($locationProvider, $stateProvider) {
     $locationProvider.html5Mode({

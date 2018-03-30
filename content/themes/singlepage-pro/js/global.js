@@ -12,9 +12,7 @@ require.config({
     "angular-tree-control": "vendor/angular-tree-control/angular-tree-control",
     "angular-loading-bar": "vendor/angular-loading-bar/build/loading-bar",
     "angular-ui-router": "vendor/angular-ui-router/release/angular-ui-router",
-    "angular-chart": "vendor/angular-chart.js/dist/angular-chart",
     "lodash": "vendor/lodash/dist/lodash",
-    "chart": "vendor/chart.js/dist/Chart",
     "introJs": "vendor/intro.js/intro",
     "d3": "vendor/d3/d3",
     "ol": "vendor/ol3-bower/ol",
@@ -28,7 +26,6 @@ require.config({
     shim: {
       "angular": { exports: "angular", deps: ["jquery"] },
       "angular-animate": { deps: ["angular"] },
-      "angular-chart": { deps: ["angular", "chart"] },
       "angular-loading-bar": { deps: ["angular"] },
       "angular-ui-router": { deps: ["angular"] },
       "angular-sanitize" : { deps: ["angular"] },
@@ -36,7 +33,7 @@ require.config({
       "angular-bootstrap": { deps: ["angular"] },
       "angular-smooth-scroll": { deps: ["angular"] },
       "angular-ui-notification": { deps: ["angular"] },
-      "services": { deps: ["angular-chart", "angular-ui-router", "angular-sanitize",
+      "services": { deps: ["angular-ui-router", "angular-sanitize",
         "angular-animate", "angular-loading-bar", "angular-bootstrap", "angular-smooth-scroll",
         "angular-ui-notification", "angularjs-slider", "angular-tree-control"]
       },

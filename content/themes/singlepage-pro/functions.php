@@ -13,8 +13,8 @@ function theme_enqueue_scripts(){
     */
 
     /* PRODUCTION */
-    wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
-    // wp_register_script('global', get_bloginfo('template_url') . '/js/optimized.min.js', array('require'), false, true);
+    // wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
+    wp_register_script('global', get_bloginfo('template_url') . '/js/optimized.min.js', array('require'), false, true);
     wp_enqueue_script('global');
 
 
