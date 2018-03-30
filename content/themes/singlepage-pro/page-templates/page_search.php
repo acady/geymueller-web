@@ -690,26 +690,15 @@
   <script type="text/ng-template" id="/facet.html">
     <facetcontainer facet-title="facetTitle">
       <ul>
-        <li ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig] track by $index"
-            ng-if="$index % 2 === 0 && $index < 20" class="facet-checkbox facet-line">
-
-          <input type="checkbox" ng-click="toggleFacetValue(facetValue)"
-                 ng-checked="isRefined(facetValue)"
-                 id="facet-checkbox"/>
-          <label for="facet-checkbox"><input type="checkbox"
-                                             ng-click="toggleNotFacetValue(facetValue)"
-                                             ng-checked="isNot(facetValue)"
-                                             id="facet-checkbox-second"/>
-          </label><label class="check-exclude" for="facet-checkbox-second"><a href=""
-                                                                              class="facet-link toggle-refine"
-                                                                              ng-class="{ 'facet-disjunctive': disjunctive, 'facet-refined': isRefined(facetValue) }"
-                                                                              ng-click="toggleFacetValue(facetValue)">
-              {{ facetValue }}
-            </a></label>
+        <li ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig] track by $index" ng-if="$index % 2 === 0 && $index < 20" class="facet-checkbox facet-line">
+            <input type="checkbox" ng-click="toggleFacetValue(facetValue)" ng-checked="isRefined(facetValue)"/>
+            <label ng-click="toggleFacetValue(facetValue)">
+                {{ facetValue }}
+            </label>
           <span class="facet-count">
-      <a href="" class="facet-link toggle-refine" ng-click="toggleFacetValue(facetValue)">{{ searchResult.facet_counts.facet_fields[facetConfig][$index + 1] }}</a>
+      {{ searchResult.facet_counts.facet_fields[facetConfig][$index + 1] }}
       /
-      <a href="" class="facet-link toggle-refine" ng-click="expandFacetValue(facetValue)">{{ globalSearchResult.facet_counts.facet_fields_map[facetConfig][facetValue] }}</a>
+      {{ globalSearchResult.facet_counts.facet_fields_map[facetConfig][facetValue] }}
     </span>
         </li>
         <li ng-if="searchResult.facet_counts.facet_fields[facetConfig].length >= 20">
@@ -725,7 +714,7 @@
     </div>
     <div class="modal-body">
       <input type="text" ng-model="facetModalFilter" class="form-control">
-      <ul>
+      <ul class="facet-modal">
         <li
             ng-repeat="facetValue in searchResult.facet_counts.facet_fields[facetConfig] | filter: filterUnuseful() | filter: facetModalFilter | orderBy: 'toString()' track by $index"
             ng-if="$index % 2 === 0 && $index < 100">
@@ -763,23 +752,6 @@
     <div class="search-main-container" ng-repeat="currentSearch in searches track by $index" index="$index" ng-init="searchResultsIndex = $index;">
 
           <button type="button" class="close" ng-click="removeTab(searchResultsIndex)" ng-if="searches.length > 1">&times;</button>
-
-          <div class="selectedFacets" ng-if="showSelectedFacets(currentSearch.selectedFacets)">
-            <div class="selectedFacetsCaption">Suchgeschichte</div>
-            <div ng-repeat="(facetTitleKey, facetEntries) in currentSearch.selectedFacets"
-                 ng-if="showFacetSelection(facetEntries)">
-              <span class="selectedFacetTitle">{{ showFacetTitle(facetTitleKey) }}:</span>
-              <span ng-repeat="(facetEntryKey, facetEntrySelected) in facetEntries track by $index"
-                    ng-if="facetEntrySelected">
-                <span class="selectedFacetValue">
-                  {{showSelectedFacetValue(facetEntries, facetEntryKey, facetTitleKey)}}
-                </span>
-                <button type="button" class="remove-facet-value" ng-click="toggleFacetValue(currentSearch.selectedFacets, facetTitleKey, facetEntryKey)">
-                  &times;
-                </button>
-              </span>
-            </div>
-          </div>
 
           <div class="row">
             <div class="search-container">
