@@ -46,6 +46,9 @@ if (!defined('DB_COLLATE')) {
 	define('DB_COLLATE', '');
 }
 
+/** AUTO Update Wordpress **/
+define( 'WP_AUTO_UPDATE_CORE', true );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
