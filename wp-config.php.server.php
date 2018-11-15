@@ -32,8 +32,7 @@ if (!defined('DB_PASSWORD')) {
 if (!defined('DB_HOST')) {
   // use database from server. requires SSH port forwarding like so:
   // ssh -f <your-user-name>@88.198.35.70 -L 7702:127.0.0.1:3306 -N
-	// define('DB_HOST', '127.0.0.1:7702');
-	define('DB_HOST', 'localhost');
+	define('DB_HOST', '127.0.0.1:7702');
 }
 
 /** Database Charset to use in creating database tables. */
